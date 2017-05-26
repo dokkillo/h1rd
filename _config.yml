@@ -1,0 +1,80 @@
+
+##########################################
+#     Change these variables !important
+##########################################
+
+# Set this for Copyright in the footer
+owner: Dokkillo
+
+# Optional quote in the footer
+# To disable set enable to false
+quote:
+  enable: false
+  quote: Some fancy quote
+  author: John Doe
+
+# Set this to your main site title. If page doesn't have its own title,
+# then this title will be used.
+title: H1RD.COM
+
+
+# Following needed for disqus integration
+# Set your 'disqus' account name
+disqus:
+
+# Uncomment if deployed locally
+#url: https://localhost:4000
+
+# Set your host if deployed not locally
+# For example "https://yourGitHub.github.io"
+url:
+
+# Change this to your base URL starting with forward slash if site is in gh-pages branch
+# For example /branchName
+# NOTE! only change if site is NOT in master's branch
+baseurl:
+
+# Change this to your google analytics ID
+google_analytics:
+
+# Contact form pupublic key
+contact_PK:
+
+##########################################
+#          Optional variables
+##########################################
+
+# Set maximum posts per page
+paginate: 10
+
+# Set permalink
+permalink: /:categories/:title
+
+# MathJax support
+math: true
+
+collections:
+- definitions
+
+##########################################
+#          Do not change these variables
+##########################################
+
+include:
+  - _pages
+
+sass:
+  sass_dir: _sass
+sass:
+    style: compressed
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap # add /sitemap.xml file
+
+paginate_path: /_pages/page:num
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM

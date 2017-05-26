@@ -1,0 +1,25 @@
+<head>
+    <title>
+        {% if page.title %}
+        {{ page.title }}
+        {% else %}
+        {{ site.title }}
+        {% endif%}
+    </title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description}}"/>
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/resources/css/main.css"/>
+    {% if page.css %}
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ page.css }}"/>
+    {% endif %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico"/>
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+
+    {% if site.math %}
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    {% endif %}
+</head>
