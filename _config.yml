@@ -27,7 +27,7 @@ disqus:
 
 # Set your host if deployed not locally
 # For example "https://yourGitHub.github.io"
-url:
+url: http://wwww.h1rd.com
 
 # Change this to your base URL starting with forward slash if site is in gh-pages branch
 # For example /branchName
@@ -35,7 +35,7 @@ url:
 baseurl:
 
 # Change this to your google analytics ID
-google_analytics:
+google_analytics: UA-2449512-18
 
 # Contact form pupublic key
 contact_PK:
