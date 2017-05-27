@@ -5,7 +5,7 @@ category: Hacking
 comments: true
 description: Session Hijacking, forma parte de la perdida de Autenticación y gestión de sesiones, esta reconocida como la segunda vulnerabilidad web más peligrosa según la Open Web Application Security Project (OWASP) despues de Injection. Esta vulnerabilidad permite a un atacante acceder a una aplicación como si fuese otro usuario real.
 tags:
-    - hijaking
+    - hijacking
     - hacker
     - owasp
     - intro
