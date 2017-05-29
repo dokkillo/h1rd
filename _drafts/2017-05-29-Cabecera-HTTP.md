@@ -1,0 +1,130 @@
+---
+layout: post
+title: Cabecera HTTP
+category: networking
+comments: true
+description: Son los metadatos que se envian en las peticiones HTTP para proporcionar información esencial sobre la transacción en curso.
+tags:
+    - protocolos
+    - intro
+---
+
+Hipertext Transfer Protocol en español Protocolo de transferencia de hipertexto es el protocolo de comunicación que se ocupa de las transferencias de informacion en la web. Es un protocolo sin estado, es decir,no guarda ninguna informacion de conexiones anteriores, por lo tanto estas tienen que persistirse de alguna forma. (Para más info de como persistir información en HTTP [aqui]({% post_url 2017-05-25-persistiendo-informacion-sobre-http %}) )
+
+HTTP es un protocolo orientado a transacciones y sigue un esquema peticion-respuesta entre un cliente y un servidor. El cliente (user agent) realiza una peticion enviando un mensaje con cierto formato al servidor y este le responde.
+
+
+
+## Verbos HTTP
+
+HTTP tiene varios metodos que pueden utilizarse, con esto se puede realizar cierta accion sobre el recurso que queremos manejar, hay vaarios, pero los más conocidos son los siguientes:
+
+* GET  Pide un recurso
+* POST  Actualiza un recurso
+* PUT  Inserta un recurso
+* DELETE  Borra un recurso
+
+Estos verbos son los más usados ya que forman parte de CRUD Create-Read-Update-Delete que toda aplicación web o de escritorio acaba implementando. Ademas GET se le considera un metodo seguro, ya que no afecta a los datos de la aplicacion web, no como POST DELETE o PUT
+
+
+
+## Códigos de respuesta
+
+Los códigos de respuesta es un número que nos indica que ha pasado con la peticion que ha enviado el cliente. El resto del contenido de la respuesta dependera del valor de este código.
+
+* 100-199 Codigos informativos, se ha recibido la petición y se esta procesando
+* 200-299 Respuestas correctas, todo ha ido ok.
+* 300-399 Respuestas de redirección.
+* 400-499 Errores de cliente.
+* 500-599 Problemas del servidor
+
+Los codigos más usados:
+
+* 200 Todo OK
+* 301 Moved permanently Recurso movido permanentemente, no mires más aqui.
+* 302 Moved Temporaly Recurso movido temporalmente, ahora no esta, pero mira siempre antes aqui.
+* 304 NotModified Recurso no ha cambiado desde la ultima vez.
+* 400 Bad Request, Mala sintaxis de la petición
+* 401 Unauthorized Cliente no autentificado tiene que autentificarse primero
+* 403 Forbidden, acceso prohibido
+* 404 Not Found, recurso no existe
+* 500 Server error, algo fue mal durante el proceso
+* 503 Service unavailable, el server no respondera a la petición.
+
+## Recursos HTTP
+
+Es una cadena de caracteres que identifica a los recursos de una red de forma inequivoca. Este recurso puede ser un documento, una foto, un video, cada recurso esta indentificado por una URI
+La Uri tiene diferentes partes:
+
+Por ejemplo tenemos esta url __http://food.com/recipe/meat__ sus partes son:
+* http:// Es el esquema, tambien podria ser https, o ftp
+* food.com es el nombre de dominio donde esta alojada la web
+* /recipe/meat es el url path donde esta alojado el recurso
+
+Otro caso __http://food.com:80/recipes/meat__ sus partes son:
+* http:// Es el esquema
+* :80 El puerto del servidor
+* food.com es el nombre de dominio
+* recipe/meat es el url path
+
+Otro caso __http://bing.com/search?q=pentester__ sus partes son:
+* http:// es el esquema
+* food.com es el nombre de dominio o host
+* search? es el url path
+* q=pentester es la query
+
+Otro caso __http://food.com/meat#types__ sus partes son:
+* http:// es el esquema
+* food.com es el host
+* meat es el url path
+* #types es el frament y solo funciona en el cliente no en el servidor.
+
+
+## Mensaje HTTP
+
+Por ejemplo un navegador quiere acceder a google.com, el navegador enviaria un mensaje por el puerto 80 estilo:
+
+{% highlight html linenos %}
+ GET /index.html HTTP/1.1
+ Host: www.google.com
+ User-Agent: navegador
+ Referer: www.google.com
+ User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0
+ Connection: keep-alive
+ [Línea en blanco]
+{% endhighlight %}
+
+
+ La respuesta del servidor seria algo asi:
+
+{% highlight html linenos %}
+
+HTTP/1.1 200 OK
+Date: Fri, 31 Dec 2003 23:59:59 GMT
+Content-Type: text/html
+Content-Length: 1221
+
+<html lang="eo">
+<head>
+<meta charset="utf-8">
+<title>Título del sitio</title>
+</head>
+<body>
+<h1>Página principal de www.google.com</h1>
+(Contenido)
+  .
+  .
+  .
+</body>
+</html>
+
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
