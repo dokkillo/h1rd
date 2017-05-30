@@ -3,128 +3,106 @@ layout: post
 title: Cabecera HTTP
 category: redes
 comments: true
-description: Son los metadatos que se envian en las peticiones HTTP para proporcionar información esencial sobre la transacción en curso.
+description: Las cabeceras HTTP son los metadatos que se envian en las peticiones HTTP para proporcionar información esencial sobre la transacción en curso. La mejor manera de entender HTTP es creando peticiones a mano y ver que va sucediendo.
 tags:
     - protocolos
     - intro
+    - HTTP
+    - telnet
 ---
 
-Hipertext Transfer Protocol en español Protocolo de transferencia de hipertexto es el protocolo de comunicación que se ocupa de las transferencias de informacion en la web. Es un protocolo sin estado, es decir,no guarda ninguna informacion de conexiones anteriores, por lo tanto estas tienen que persistirse de alguna forma. (Para más info de como persistir información en HTTP [aqui]({% post_url 2017-05-25-persistiendo-informacion-sobre-http %}) )
+Las cabeceras HTTP son los metadatos que se envian en las peticiones HTTP para proporcionar información esencial sobre la transacción en curso. La mejor manera de entender HTTP es creando peticiones a mano y ver que va sucediendo.
 
-HTTP es un protocolo orientado a transacciones y sigue un esquema peticion-respuesta entre un cliente y un servidor. El cliente (user agent) realiza una peticion enviando un mensaje con cierto formato al servidor y este le responde.
+## Telnet
 
+Para poder crear las peticiones a mano, lo mejor es usar el programa de Telnet, si ese que se usaba en los 80 para acceder a las BBS (Los foros de esa epoca..), se dejo de usar porque enviaba todos los datos en forma plana. Tanto en Windows como en linux, tenemos una aplicacion llamada Telnet que podemos acceder a ella desde una consola o desde cmd.
 
+## Creando las peticiones HTTP a mano
 
-## Verbos HTTP
-
-HTTP tiene varios metodos que pueden utilizarse, con esto se puede realizar cierta accion sobre el recurso que queremos manejar, hay vaarios, pero los más conocidos son los siguientes:
-
-* GET  Pide un recurso
-* POST  Actualiza un recurso
-* PUT  Inserta un recurso
-* DELETE  Borra un recurso
-
-Estos verbos son los más usados ya que forman parte de CRUD Create-Read-Update-Delete que toda aplicación web o de escritorio acaba implementando. Ademas GET se le considera un metodo seguro, ya que no afecta a los datos de la aplicacion web, no como POST DELETE o PUT
-
-
-
-## Códigos de respuesta
-
-Los códigos de respuesta es un número que nos indica que ha pasado con la peticion que ha enviado el cliente. El resto del contenido de la respuesta dependera del valor de este código.
-
-* 100-199 Codigos informativos, se ha recibido la petición y se esta procesando
-* 200-299 Respuestas correctas, todo ha ido ok.
-* 300-399 Respuestas de redirección.
-* 400-499 Errores de cliente.
-* 500-599 Problemas del servidor
-
-Los codigos más usados:
-
-* 200 Todo OK
-* 301 Moved permanently Recurso movido permanentemente, no mires más aqui.
-* 302 Moved Temporaly Recurso movido temporalmente, ahora no esta, pero mira siempre antes aqui.
-* 304 NotModified Recurso no ha cambiado desde la ultima vez.
-* 400 Bad Request, Mala sintaxis de la petición
-* 401 Unauthorized Cliente no autentificado tiene que autentificarse primero
-* 403 Forbidden, acceso prohibido
-* 404 Not Found, recurso no existe
-* 500 Server error, algo fue mal durante el proceso
-* 503 Service unavailable, el server no respondera a la petición.
-
-## Recursos HTTP
-
-Es una cadena de caracteres que identifica a los recursos de una red de forma inequivoca. Este recurso puede ser un documento, una foto, un video, cada recurso esta indentificado por una URI
-La Uri tiene diferentes partes:
-
-Por ejemplo tenemos esta url __http://food.com/recipe/meat__ sus partes son:
-* http:// Es el esquema, tambien podria ser https, o ftp
-* food.com es el nombre de dominio donde esta alojada la web
-* /recipe/meat es el url path donde esta alojado el recurso
-
-Otro caso __http://food.com:80/recipes/meat__ sus partes son:
-* http:// Es el esquema
-* :80 El puerto del servidor
-* food.com es el nombre de dominio
-* recipe/meat es el url path
-
-Otro caso __http://bing.com/search?q=pentester__ sus partes son:
-* http:// es el esquema
-* food.com es el nombre de dominio o host
-* search? es el url path
-* q=pentester es la query
-
-Otro caso __http://food.com/meat#types__ sus partes son:
-* http:// es el esquema
-* food.com es el host
-* meat es el url path
-* #types es el frament y solo funciona en el cliente no en el servidor.
-
-
-## Mensaje HTTP
-
-Por ejemplo un navegador quiere acceder a google.com, el navegador enviaria un mensaje por el puerto 80 estilo:
+Para estas pruebas practicare con una pagina web llamada picandocodigo.net, para ello abrimos telnet con la terminal y escribimos:
 
 {% highlight html linenos %}
- GET /index.html HTTP/1.1
- Host: www.google.com
- User-Agent: navegador
- Referer: www.google.com
- User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0
- Connection: keep-alive
- [Línea en blanco]
+
+telnet picandocodigo.net 80
+
 {% endhighlight %}
 
+Telnet funciona con el puerto 23 por defecto, por lo que tenemos que decirle que se conecte a la web por el puerto 80. Al ejecutar el comando anterior recibimos esta respuesta:
 
- La respuesta del servidor seria algo asi:
+{% highlight html linenos %}
+
+Trying 192.185.21.193...
+Connected to picandocodigo.net.
+Escape character is '^]'.
+
+
+{% endhighlight %}
+
+Por lo que ahora nosotros escribimos nuestra petición:
+
+
+{% highlight html linenos %}
+
+GET / HTTP/1.1
+Host: www.picandocodigo.net
+
+{% endhighlight %}
+
+En ella usamos el verbo GET, y pedimos / es decir la raiz de la web mediante HTTP/1.1 y del host www.picandocodigo.net, esta es la minima cabecera necesaria para ejecutar una peticion correcta.
+La respuesta que recibimos es la siguiente:
+
+{% highlight html linenos %}
+
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.12.0
+Date: Tue, 30 May 2017 05:16:51 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 0
+Connection: keep-alive
+Location: http://picandocodigo.net/
+
+{% endhighlight %}
+
+La respuesta que recibimos es un codigo 301, es decir todas las peticiones a www.picandocodigo.net se deben mover a picandocodigo.net, Asi que cambiamos nuestra peticion a la url que nos dicen.
+
+{% highlight html linenos %}
+
+GET / HTTP/1.1
+Host: picandocodigo.net
+
+{% endhighlight %}
+
+Y ahora ya recibimos todo el html de la pagina. correctamente.
 
 {% highlight html linenos %}
 
 HTTP/1.1 200 OK
-Date: Fri, 31 Dec 2003 23:59:59 GMT
+Date: Tue, 30 May 2017 05:16:51 GMT
 Content-Type: text/html
 Content-Length: 1221
 
-<html lang="eo">
-<head>
-<meta charset="utf-8">
-<title>Título del sitio</title>
-</head>
-<body>
-<h1>Página principal de www.google.com</h1>
-(Contenido)
-  .
-  .
-  .
-</body>
+<html>
+....
 </html>
 
 {% endhighlight %}
 
+Como dije este es la petición HTTP básica, se puede complementar con muchas más caberas según se necesite, tal como hacen los navegadores. Algunas de las más importantes:
 
-
-
-
-
-
-
+* Accept indica el MIME aceptado
+* Accept-Charset indica el código de caracteres aceptado
+* Accept-Encoding indica el método de compresión aceptado
+* Accept-Language indica el idioma aceptado
+* User-Agent para describir al navegador o agente que esta haciendo la petición
+* Server indica el tipo de servidor
+* Allow métodos permitidos para el recurso
+* Content-Type indica el MIME del contenido
+* Content-Length longitud del mensaje
+* Location indica donde está el contenido
+* Referer indica el origen de la petición
+* Date fecha de creación
+* Set-Cookie Cabeceras para control de cookies
+* Cookie Cabeceras para control de cookies
+* Host indica máquina destino del mensaje
+* Connection indica como establecer la conexión
 
