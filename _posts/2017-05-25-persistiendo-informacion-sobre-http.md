@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Persistiendo la información sobre HTTP
-category: networking
+category: redes
 comments: true
 description: El protocolo HTTP es un protocolo sin estado, es decir cuando nos autenticamos en un sitio, en el proximo request que hacemos a la web, no viene ningún sitio del request que diga que estamos autenticados, por lo que tenemos que apañarnos con "algunas trampas". Cuando un usuario se identifica en un web, esta le envia un token, que es unico para el usuario, y asi cada vez que el usurio haga un request a la web, este token ira en el request para que la web sepa quien es el usuario.
 tags:

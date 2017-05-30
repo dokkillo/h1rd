@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cabecera HTTP
-category: networking
+category: redes
 comments: true
 description: Son los metadatos que se envian en las peticiones HTTP para proporcionar información esencial sobre la transacción en curso.
 tags:
