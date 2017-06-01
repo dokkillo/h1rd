@@ -19,8 +19,10 @@ Según la Open Web Application Security Project (Owasp), es desde ya casi diez a
 Esta vulnerabilidad puede ser de dos tipos:
 
 * Reflejada : el ataque requiere que el usuario visite un link de la pagina modificado por el atacante donde viene incrustado el payload o codigo malicioso.
+Más informacion en: [XSS Reflejado]({% post_url 2017-05-31-Ataque-xss-reflejado %})
 
 * Persistente : el atancante es capaz de guardar su payload en la base de datos de la propia web (por ejemplo un comentario de un wordpress) y que cada vez que un usuario visitara esa pagina web, el ataque se lanzara.
+Más informacion en: [XSS Persistido]({% post_url 2017-06-01-Ataque-xss-persistido %})
 
 ## ¿Como detectarla?
 
