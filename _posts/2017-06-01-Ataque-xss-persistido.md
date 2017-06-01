@@ -9,7 +9,6 @@ tags:
     - hacker
     - owasp
     - xss
-    - intro
 ---
 
 El ataque XSS Persistido consiste en que el atacante consiga que su ataque se quede guardado en la base de datos de la pagina web. Es decir consigue que su codigo malicioso o payload quede guardado en la pagina web, en un comentario, en un post de un foro, en una firma, y asi que cada visitante que acceda a esa pagina web sea atacado.

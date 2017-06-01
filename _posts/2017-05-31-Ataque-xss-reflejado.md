@@ -8,8 +8,7 @@ tags:
     - hijacking
     - hacker
     - owasp
-    - xss
-    - intro
+    - xss  
 ---
 
 El ataque XSS Reflejado consiste que el atacante comparta un link creado a sus victimas para que estas lo ejecuten y por conseguir su sesion o control sobre su navegador.
