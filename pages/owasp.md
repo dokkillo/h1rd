@@ -15,6 +15,8 @@ OWASP
 
 ## 1. Inyeccion
 
+SQL injection o inyeccion de SQL es una vulnerabilidad donde el atacante puede modificar una query correcta y cambiar asi el funcionamiento de la web. Puede haber inyecciones de otros tipos como (LDAP, XPath, nosql, os....)
+
 En estos articulos hable sobre la inyeccion de sql:
 
 * [Que es la Inyección de SQL]({% post_url 2017-05-15-que-es-sql-injection %}) 
@@ -27,12 +29,17 @@ En estos articulos hable sobre la inyeccion de sql:
 
 ## 2. Pérdida de Autentificación y Gestión de sesiones
 
+Session Hijacking, forma parte de la perdida de Autenticación y gestión de sesiones, esta reconocida como la segunda vulnerabilidad web más peligrosa según la Open Web Application Security Project (OWASP) despues de Injection. Esta vulnerabilidad permite a un atacante acceder a una aplicación como si fuese otro usuario real.
+Hay varios tipos de vectores de ataque para conseguir explotar esta vulnerabiliad, por ejemplo por Cross-site scripting mala configuracion de logs, problemas de sniffing.  En estas semanas ire publicando post sobre cada uno de ellos y completando esta información.
+
 En este articulo hablo del secuestro de sesion:
 
 * [Que es session hijacking]({% post_url 2017-05-26-que-es-session-hijacking %}) 
 
 
 ## 3. Cross Site Scripting (XSS)
+
+Esta vulnerabilidad consiste en que un atacante es capaz de inyectar codigo javascript en una pagina visitada por el usuario y poder secuestrar la sesion del usuario o comprometer su navegador web.
 
 Estos articulos hablo del Cross site scripting:
 
