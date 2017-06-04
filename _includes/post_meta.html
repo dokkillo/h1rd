@@ -1,7 +1,6 @@
 <div class="post-meta">
-    <small>
         <time datetime="{{ page.date | date: '%d %m %Y' }}">
-            {{ page.date | date: "%d %B, %Y" }}
+            {{ page.date | date: "%d %B %Y" }}
         </time>
         <span class="tag-sep"> | </span>
         {% if page.comments %}
@@ -10,5 +9,4 @@
         <span class="tag-sep"> | </span>
         {% endif %}
         {% include tags.html %}
-    </small>
 </div>
