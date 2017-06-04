@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cabecera HTTP
-category: redes
+category: Redes
 comments: true
 description: Las cabeceras HTTP son los metadatos que se envian en las peticiones HTTP para proporcionar información esencial sobre la transacción en curso. La mejor manera de entender HTTP es creando peticiones a mano y ver que va sucediendo.
 tags:

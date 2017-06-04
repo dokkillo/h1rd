@@ -1,7 +1,5 @@
-<nav class="tags">
-    <ul>
+<ul class="tags">
         {% for tag in page.tags %}
         <li><a href="{{ site.baseurl }}/tags/{{ tag | downcase }}.html">{{ tag }}</a><span>&nbsp;&nbsp;</span></li>
         {% endfor %}
-    </ul>
-</nav>
+</ul>

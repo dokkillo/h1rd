@@ -51,7 +51,7 @@ paginate: 10
 permalink: /:categories/:title
 
 # MathJax support
-math: true
+math: false
 
 collections:
 - definitions
@@ -71,6 +71,8 @@ sass:
 gems:
   - jekyll-paginate
   - jekyll-sitemap # add /sitemap.xml file
+  - jekyll-seo-tag
+  - jekyll-feed
 
 paginate_path: /_pages/page:num
 

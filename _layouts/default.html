@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body style="background: url('{{ site.baseurl }}/resources/images/main_front.jpg') no-repeat fixed;
-                            background-size: cover">
+<body>
 <div id="wrapper">
     {% include header.html %}    
     <main id="start">  
         <div class="articles">
-            {{ content }}
-        </div>
+            <div class="container">
+                <h1>DE PROGRAMADOR A HACKER ETICO</h1>
+                <div class="row">
+                    <div class="col-sm-8">
+                          {{ content }}     
+                    </div>  
+                    <div class="col-sm-4">   
+                         <div class="row">
+                              <a class="twitter-timeline" href="https://twitter.com/dokkillo" data-tweet-limit=5 >Tweets de dokkillo</a>
+                                    <script async src="//platform.twitter.com/widgets.js"  charset="utf-8"></script>
+                        </div>
+                    </div>        
+             </div>
+            </div>             
+        </div> 
     </main>
+ 
         {% include paginator.html %}
     <footer>
         {% include footer.html %}
@@ -18,5 +31,7 @@
 {% if site.disqus %}
 <script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
 {% endif %}
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59341e86a8dc0e6a"></script> 
 </body>
 </html>
