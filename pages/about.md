@@ -4,7 +4,7 @@ title: About
 description: Programador web a Pentester.
 ---
 
-# De Programador a Pentester
+
 
 Soy un programador web especializado en .NET con casi ya 10 años de experiencia, que hace unos meses decidio que estaria bien dar un cambio en su carrera, y moverse al tema de la seguridad informatica ofensiva. 
 Asi que me puse a estudiar, empece tomando apuntes, pero con el tiempo me di cuenta, que no, era suficiente, que necesitaba mejores apuntes, ya que los que tenia eran simples notas escritas muy basicas, necesitaba algo más que me ayudara a interiorizar todo, asi que decidi coger un dominio que tenia libre y empezar este blog, que me obliga a explicar el tema que estoy tratando con otras palabras a alguien que no lo conoce, y eso me ayuda a aprender más.
