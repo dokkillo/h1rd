@@ -52,6 +52,10 @@ Estos articulos hablo del Cross site scripting:
 
 ## 4. Referencia directa insegura de objetos
 
+Este ataque referencia directa a objetos ("direct object reference") ocurre cuando un desarrollador expone una referencia hacia un objeto interno de la aplicación, (parametro web, formulario, fichero, base de datos). Un atacante podría cambiar estas referencias y acceder a otros recursos de la aplicacion sin autorización
+
+* [Ataque por referencia insegura de objetos]({% post_url 2017-06-09-Ataque-por-referencia-insegura-de-objetos %}) 
+
 ## 5. Configuración de seguridad incorrecta
 
 ## 6. Exposición de datos sensibles

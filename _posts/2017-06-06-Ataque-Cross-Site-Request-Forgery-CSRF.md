@@ -11,7 +11,7 @@ tags:
 
 El ataque por CSRF o XSRF, consiste en forzar al usuario a ejecutar peticiones no deseadas en una web, en la que estan autentificados, si que este se de cuenta. En este tipo de ataque es necesaria la utilización de ingenieria social para engañar a la victima y que ejecute la petición falsa, sea mediante un email, o un link de una red social.
 
-Según la Open Web Application Security Project (Owasp), el Cross Site Request Forgery forma parte de su [top diez](https://www.owasp.org/index.php/Top_10_2007-Cross_Site_Request_Forgery){:target="_blank"}. 
+Según la Open Web Application Security Project (Owasp), el Cross Site Request Forgery forma parte de su [top diez](https://www.owasp.org/index.php/Top_10_2017-A8-Cross-Site_Request_Forgery_(CSRF)){:target="_blank"}. 
 
 ## Como funciona este ataque
 
