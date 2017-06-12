@@ -60,6 +60,8 @@ Este ataque referencia directa a objetos ("direct object reference") ocurre cuan
 
 Todas las configuraciones relacionadas con la seguridad de una aplicación deben ser definidas, implementadas y mantenidas, ya que las configuraciones por defecto no suelen ser correctas. Ademas se debe mantener todo el codigo actualizado incluido las librerias de terceros que se usen en la aplicación.Esto incluye, cuentas de usuario por defecto, paginas sin usar, acceso a ficheros y directorios desprotegidos, fallos no arreglados, configuraciones incorrectas, que nos den acceso al sistema o a informacion relevante del sistema.
 
+* [Ataque por configuracion de seguridad incorrecta]({% post_url 2017-06-12-Ataque-por-configuracion-de-seguridad-incorrecta %}) 
+
 
 
 ## 6. Exposición de datos sensibles
