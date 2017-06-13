@@ -42,4 +42,8 @@ en la linea 1, vemos que es un formulario que hara un post a bancovulnerable con
 Los ataques CSRF funcionan porque son predecibles, simplemente es reconstruir un request, para evitar esto, se añade un factor aleatorio mediante un CSRF token, que consiste en un string aleatorio entre la pagina legitima y el navegador via cookie.
 Con esto, el ataque anterior no hubiese funcionado ya que no hubiera tenido el token correcto.
 
+## Video de un ataque CSRF 
 
+Este video es la prueba de concepto que realizo el ponente [Eduardo Sánchez](https://twitter.com/eduSatoe){:target="_blank"} en la Hack & Beers de Madrid
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZpXFHYK8Idk?rel=0" frameborder="0" allowfullscreen></iframe>
