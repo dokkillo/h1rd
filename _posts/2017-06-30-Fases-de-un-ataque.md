@@ -3,12 +3,12 @@ layout: post
 title: Fases de un test de penetración
 category: Hacking
 comments: true
-description: Un test de penetracion consiste en hacer pruebas ofensivas contra mecanismos de defensa del entorno que vamos a analizar, en otras palabras, es hacer de lo que haria un hacker delicuente en ese entorno, una red, una web o ambas, y mediante nuestro trabajo poder avisar a la empresa que arregle esos fallos.
-Este test se compone en cinco fases, fase de reconocimiento, fase de escaneo, fase de enumeracion, fase de acceso y fase de mantenimiento de acceso.
+description: Un test de penetracion consiste en hacer pruebas ofensivas contra mecanismos de defensa del entorno que vamos a analizar, en otras palabras, es hacer de lo que haria un hacker delicuente en ese entorno, una red, una web o ambas, y mediante nuestro trabajo poder avisar a la empresa que arregle esos fallos.Este test se compone en cinco fases, fase de reconocimiento, fase de escaneo, fase de enumeracion, fase de acceso y fase de mantenimiento de acceso.
 
 tags:   
     - hacker
     - pentesting
+
 ---
 
 Un test de penetracion consiste en hacer pruebas ofensivas contra mecanismos de defensa del entorno que vamos a analizar, en otras palabras, es hacer de lo que haria un hacker delicuente en ese entorno, una red, una web o ambas, y mediante nuestro trabajo poder avisar a la empresa que arregle esos fallos.
@@ -17,6 +17,8 @@ Este test se compone en cinco fases, fase de reconocimiento, fase de escaneo, fa
 ## Fase de Reconocimiento
 
 Esta fase consiste en recopilar toda la información posible de nuestro objetivo, que seguramente la necesitaremos más adelante. Esta información consiste en ips, nombres de usuario, trabajadores de la empresa, tipologias de red, tecnologias usadas, emails.
+
+* [Fase de reconocimiento]({% post_url 2017-07-01-Fase-reconocimiento %}) 
 
 ## Fase de escaneo
 
