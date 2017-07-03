@@ -18,7 +18,10 @@ Este test se compone en cinco fases, fase de reconocimiento, fase de escaneo, fa
 
 Esta fase consiste en recopilar toda la información posible de nuestro objetivo, que seguramente la necesitaremos más adelante. Esta información consiste en ips, nombres de usuario, trabajadores de la empresa, tipologias de red, tecnologias usadas, emails.
 
+* [Google Hacking]({% post_url 2017-06-12-Google-hacking %}) 
 * [Fase de reconocimiento]({% post_url 2017-07-01-Fase-reconocimiento %}) 
+* [Fase de reconocimiento Comandos]({% post_url 2017-07-03-Fase-reconocimiento-dns %}) 
+
 
 ## Fase de escaneo
 
