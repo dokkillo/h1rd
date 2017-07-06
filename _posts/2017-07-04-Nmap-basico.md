@@ -103,6 +103,39 @@ nmap -p http* 192.168.128.1
 
 {% endhighlight %}
 
+Otra opcion, es buscar en la maquina los puertos abiertos más frecuentes, ya que NMAP guarda junto con cada puerto un contador con los más frecuentes, si quisieramos buscar los 5 puertos abiertos más frecuentes, en este caso la consulta seria:
+
+{% highlight sql linenos %}
+
+nmap --top-ports 5 192.168.128.1
+
+{% endhighlight %}
+
+__Si a Nmap no se pone algun puerto, el por defecto busca los 1000 puertos más usados, --top-ports 1000__
+
+Otro comando muy interesante a usar, es --reason con esta opción cada puerto nos dira el motivo del porque nmap a decidido, si esta open, closed, o filtered. Y con eso nosotros podremos decidir si es un falso negativo o no.
+
+{% highlight sql linenos %}
+
+nmap --top-ports 5 --reason 192.168.128.1
+
+{% endhighlight %}
+
+
+## Exportar datos
+
+Cuando hacemos un escaneo, nos interesa guardarlo en un fichero para luego mostrarlo en el reporte final, esto lo podemos hacer con la opcion -o que además tiene varios modificadores, como por ejemplo, N que pondra todo exactamente igual que hemos visto en pantalla, o X que lo guardara en formato XML o G que escribe todo en una linea asi facilita la separacion a posteriori con el comando grep.
+
+
+{% highlight sql linenos %}
+
+nmap -oN reporte.txt --top-ports 5 --reason 192.168.128.1
+
+{% endhighlight %}
+
+
+
+
 
 
 
