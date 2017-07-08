@@ -40,10 +40,4 @@ Si en la parte anterior podiamos ver que perfiles busca la empresa, para ver sus
 Con el whois, podras ver todos los datos del registro del dominio, el email del registrador, sus datos personales, su movil. Se puede ver tanto por comando en linux o en windows escribiendo whois nombre-dominio o mediante la url [Whois](https://www.whois.com/whois/){:target="_blank"}. 
 Hay una manera de que no puedan ver esto, y que la empresa pague una pequeña cantidad, unos 5-10€ anuales, y haga que esos datos queden ocultos.
 
-## Ping
-
-interesante para sacar la ip del sitio
-
-## nslookup
-
 
