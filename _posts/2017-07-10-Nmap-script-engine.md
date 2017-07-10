@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Nmap detección de OS
+title: Nmap script engine
 category: Hacking
 comments: true
-description: En NMAP hasta ahora hemos estado centrados en descubrir puertos abiertos, servicios y demas, ahora en este post podremos saber como que versiones o que programas estan corriendo en se puerto, o incluso cual es el sistema operativo del host
+description: NMAP tiene un modulo donde podemos ampliar la funcionalidad de NMAP mediante scripts hechos por el usuario, este modulo es Scripting Engine o NSE.
+A dia de hoy hay 572 scripts en la libreria por defecto de NSE y cada dia se añaden más.
 
 tags:   
     - hacker
@@ -12,30 +13,48 @@ tags:
 
 ---
 
-En NMAP hasta ahora hemos estado centrados en descubrir puertos abiertos, servicios y demas, ahora en este post podremos saber como que versiones o que programas estan corriendo en se puerto, o incluso cual es el sistema operativo del host.
+NMAP tiene un modulo donde podemos ampliar la funcionalidad de NMAP mediante scripts hechos por el usuario, este modulo es Scripting Engine o NSE.
+A dia de hoy hay 572 scripts en la libreria por defecto de NSE y cada dia se añaden más. Puedes ver la [lista de los scripts de NMAP](https://nmap.org/nsedoc/){:target="_blank"}
+
+NSE se construyo para ampliar NMAP en cinco areas diferentes:
+
+* Detección de versiones
+* Escaneo de redes
+* Deteccion de vulnerabilidades
+* Detección de backdoors
+* Explotación de vulnerabilidades
 
 
-## -sV  
+## Usando Nmap Script Engine
 
-Esto nos ayudara a saber que la version del programa que esta corriendo dentras del puerto abierto, esta opción se puede combianr con --version-intensity que puede ir de 0 a 9, por defecto es 7. Este comando puede hacer que el escaneo vaya muchisimo más lento, una opción correcta seria usar este comando solo en el puerto que nos interesa analizar.
+Para usar el modulo de scripts es necesario usar la opcion -sC, esto ejecutara __todos__ los scripts, con los problemas asociados de velocidad, otra opcion más interesante puede ser ejecutar los scripts necesarios mediante ---script. Es posible ejecutar un script en particular o una categoria en particular.
+
+El NSE tiene las siguientes categorias:
+
+* auth
+* discovery
+* fuzzer
+* safe
+* broadcast
+* dos
+* intrusive
+* version
+* brute
+* exploit
+* malware
+* vuln
+* default
+* external
+* safe
+
 
 {% highlight sql linenos %}
 
-nmap -sV 192.168.1.1
-nmap -sV -p 21 192.168.1.1
+nmap -sC cnn.com
+nmap -p 80 --script http-crono www.cnn.com
+nmap -p 80 --script safe cnn.com
+
 
 {% endhighlight %}
-
-
-
-## -O
-
-La detección del sistema operativo del host a analizar se hace mediante la opción -O pero al igual que la detección de versiones tiene un impacto importante en la velocidad del escaneo. Esta opción es mucho más efectiva si encuentra al menos un puerto abierto y un puerto cerrado.
-Se recomienda usar con las siguientes opciones:
-
-* --osscan-limit desactiva la deteccion del sistema operativo si no puede encontrar al menos un puerto abierto y otro cerrado
-* --osscan-guess, --fuzzy  ambos dos son equivalentes, le dicen al sistema que sea más agresivo al adivinar el sistema operativo de la maquina.
-* --max-os-tries 4, por defecto es 5, es para limitar el numero de intentos que hara NMAP para descubrir el sistema operativo del host.
-
 
 
