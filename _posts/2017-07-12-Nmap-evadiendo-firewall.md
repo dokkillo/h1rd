@@ -102,7 +102,7 @@ nmap -PA -g 443 -p 6756 --data-length 800 192.168.1.12
 
 {% endhighlight %}
 
-__-D ip1, ip2, ME, ip3__ Este Decoy nos permite añadir otras direcciones que pueden ser usadas como decoys
+__-D ip1, ip2, ME, ip3__ Este Decoy nos permite añadir otras direcciones que pueden ser usadas como señuelos. 
 
 
 
