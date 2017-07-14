@@ -84,6 +84,25 @@ nmap 192.168.1.1 -sI 192.168.1.12
 
 {% endhighlight %}
 
+## Otras maneras de ocultarse
+
+Ademas de firewallls, tambien podemos encontrarnos con IDS, sistemas que se ocupan de monitorizar todo el movimiento extraño de la red y guardarlo en logs. Por lo que interesa, sobre todo en pruebas de red team, pasar nuestro trafico de una manera lo más legitima posible.
+
+__-T paranoid__ para reducir la velocidad de escaneo y no llamar la atención.
+
+__-source-port portnum -g portnum__ puerto origen
+
+__--data-length num__ añade datos random.
+
+Por ejemplo, todo junto podemos hacer que nuestro escan parezca que viene de una web segura con un información encriptada.
+
+{% highlight sql linenos %}
+
+nmap -PA -g 443 -p 6756 --data-length 800 192.168.1.12
+
+{% endhighlight %}
+
+__-D ip1, ip2, ME, ip3__ Este Decoy nos permite añadir otras direcciones que pueden ser usadas como decoys
 
 
 
