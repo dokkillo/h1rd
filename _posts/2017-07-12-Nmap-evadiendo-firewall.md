@@ -104,6 +104,14 @@ nmap -PA -g 443 -p 6756 --data-length 800 192.168.1.12
 
 __-D ip1, ip2, ME, ip3__ Este Decoy nos permite añadir otras direcciones que pueden ser usadas como señuelos. 
 
+Tambien con los señuelos, podemos hacer que sean Random, y los elija NMAP.
+
+{% highlight sql linenos %}
+
+nmap -D RND 192.168.1.1
+
+{% endhighlight %}
+
 
 
 

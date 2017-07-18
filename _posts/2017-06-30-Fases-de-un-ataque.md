@@ -29,7 +29,7 @@ Con toda la información obtenida previamente se buscan posibles vectores de ata
 
 ## Fase de enumeración
 
-El objetivo de esta etapa es la obtenicon de datos referentes a los usuarios, nombres de equipos, servicios de red etc. Aqui empezamos a realizar conexiones activas en el sistema y consultas dentro del mismo.
+El objetivo de esta etapa es la obtencion de datos referentes a los usuarios, nombres de equipos, servicios de red etc. Aqui empezamos a realizar conexiones activas en el sistema y consultas dentro del mismo.
 
 ## Fase de acceso
 
