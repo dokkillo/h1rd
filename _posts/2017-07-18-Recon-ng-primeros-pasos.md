@@ -27,6 +27,7 @@ Los whois con dominios .es dan problemas.
 
 [recon-ng][default] > use whois_pocs
 [recon-ng][default] > show info
+[recon-ng][default] > run
 
 {% endhighlight %}
 

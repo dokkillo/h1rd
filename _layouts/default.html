@@ -7,16 +7,42 @@
     <main id="start">  
         <div class="articles">
             <div class="container">
-                <h1>DE PROGRAMADOR A HACKER ETICO</h1>
+                <h1>H1RD SECURITY</h1>
                 <div class="row">
                     <div class="col-sm-8">
                           {{ content }}     
                     </div>  
-                    <div class="col-sm-4">   
-                         <div class="row">
-                              <a class="twitter-timeline" href="https://twitter.com/Dokkillo/lists/hacking" data-tweet-limit=5 >Tweets de dokkillo</a>
-                                    <script async src="//platform.twitter.com/widgets.js"  charset="utf-8"></script>
+                    <div class="col-sm-4"> 
+                        <div class="row">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- adaptable -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                            data-ad-client="ca-pub-0217877517287584"
+                             data-ad-slot="8327578010"
+                         data-ad-format="auto"></ins>
+                                <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
                         </div>
+                        <div class="row">                        
+                            {% for tag in site.tags %}
+                                    {% assign t = tag | first %}
+                                        {% assign posts = tag | last %}
+
+                                          <b>{{ t | downcase }}</b>
+                                            <ul>
+                                             {% for post in posts %}
+                                                 {% if post.tags contains t %}
+                                             <li>
+                                                  <a href="{{ post.url }}">{{ post.title }}</a>
+                                                     <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+                                            </li>
+                                                 {% endif %}
+                                             {% endfor %}
+                                            </ul>
+                            {% endfor %}
+                        </div>                         
                     </div>        
              </div>
             </div>             
