@@ -108,7 +108,7 @@ o usamos el modulo el modulo google_site_web, ello nos añadira todos los subdom
 {% endhighlight %}
 
 
-En el siguiente post seguire profundizando en Recon-ng, donde ya pondremos las keys de redes sociales y podremos buscar más info.
+En el siguiente post seguire profundizando en Recon-ng, sobre todo en la parte de los modulos, donde ya pondremos las keys de redes sociales y podremos buscar más info.
 
 
 
