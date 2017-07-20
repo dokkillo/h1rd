@@ -14,6 +14,13 @@ tags:
 
 En la fase de reconocimiento, es necesario conseguir toda la información posible sobre nuestro objetivo, una de las maneras es mediante OSINT o Open Source INTeligence, es decir, recolección de información mediante fuentes abiertas y gratuitas de internet. Es aqui donde entra Recon-ng, un framework de reconocimiento web, escrito en python.
 
+<figure>
+<img alt="OSINT con recon-ng" src="/resources/images/recon-ng-inicio.png"/>
+<figcaption>
+Pantalla de inicio de Recon-ng
+</figcaption>
+</figure>
+
 Recon-ng esta compuesto de modulos, hay 90 de ellos, tienen diferentes funciones, desde Reporting, Recon, discovery...
 
 Al ser una aplicación de linea de comandos, hay ciertos comandos que nos ayudaran al principio para navegar en la aplicación:
