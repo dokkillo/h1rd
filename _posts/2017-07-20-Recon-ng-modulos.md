@@ -105,11 +105,7 @@ keys add nombre_key_api key
     recon/contacts-contacts/mailtester
     recon/contacts-contacts/mangle
     recon/contacts-contacts/unmangle
-    recon/contacts-credentials/hibp_breach{% highlight sql linenos %}
-
-[recon-ng][default] > set source elmundo.com
-
-{% endhighlight %}
+    recon/contacts-credentials/hibp_breach
     recon/contacts-credentials/hibp_paste
     recon/contacts-domains/migrate_contacts
     recon/contacts-profiles/fullcontact
