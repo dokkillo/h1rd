@@ -80,3 +80,4 @@ Ya el ultimo formato al que podemos exportar nuestros datos es el formato XML, p
 [recon-ng][default] > show info
 
 {% endhighlight %}
+

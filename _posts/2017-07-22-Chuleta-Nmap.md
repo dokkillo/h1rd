@@ -67,4 +67,3 @@ Estos escaneos son por defecto, solo escanearan 1000 puertos TCP.
 * Conseguir los titulos de una pagina _nmap --script=http-title 192.168.1.0/24_
 * Conseguir los HTTP Headers de webservices _nmap --script=http-headers 192.168.1.0/24_
 * Conseguir webs _nmap --script=http-enum 192.168.1.0/24_
-* Encontrar informacion sobre una IP _nmap --script=asn-query,whois,ip-geolocation-maxmind 192.168.1.0/24_
