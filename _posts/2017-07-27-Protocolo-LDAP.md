@@ -11,7 +11,7 @@ tags:
 El protocolo LDAP (Ligthweight Directory Access Protocol) es un protocolo a nivel de aplicación que permite el acceso a un servicio directorio ordenado y distribuido para buscar diversa información en un entorno de red. LDAP se le considera tambien como una base de datos a la que pueden realizarse consultas.
 
 
-## Estructura jerararquica de LDAP
+## Estructura jerarquica de LDAP
 
 Un directorio en LDAP es un conjunto de objetos con atributos organizados de manera logica y jerarquica, es parecido a como se organiza un listin telefonico, que es una serie de nombre, sean personas o empresas, que estan ordenados alfabeticamente, cada nombre tiene una dirección y un numero de telefono. Muchas veces LDAP tambien refleja organizaciones jerarquicas por limites geograficos, politicos u organizacionales, según como se haya elegido. Actualmente en las organizaciones actualmente se organiza LDAP con nombres de DNS (Sistema de nombres de dominio) y asi estructurar los niveles más altos de la organización.
 
