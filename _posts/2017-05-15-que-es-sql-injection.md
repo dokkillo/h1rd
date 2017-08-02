@@ -20,7 +20,7 @@ Según la Open Web Application Security Project (Owasp), es desde ya casi diez a
 
 
 <figure>
-<img alt="que es sql injection" src="/resources/images/que-es-sql-injection/sql-injection.png"/>
+<img alt="que es sql injection" class="img img-responsive" src="/resources/images/que-es-sql-injection/sql-injection.png"/>
 <figcaption>
 SQL Injection, la vulnerabilidad web más peligrosa según OWASP. 
 </figcaption>

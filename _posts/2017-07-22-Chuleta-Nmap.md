@@ -22,7 +22,10 @@ Estos escaneos son por defecto, solo escanearan 1000 puertos TCP.
 * Escanear una url	_nmap www.dominioweb.com_
 * Escanear un rango de IPs	_nmap 192.168.1.1-20_
 * Escanear una red	_nmap 192.168.1.0/24_
+* Escanear una red sin escanear los puertos	_nmap -sn 192.168.1.0/24_
+* Escanear una red sin dns request haciendo que el scan sea más rapido _nmap -n 192.168.1.0/24_
 * Escanear todas las ips de un fichero de texto	_nmap -iL list-of-ips.txt_
+
 
 ## Nmap Detección de puertos
 

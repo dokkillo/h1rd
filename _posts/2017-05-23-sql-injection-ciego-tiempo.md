@@ -14,7 +14,7 @@ Cuando la web no da errores con las excepciones de la base de datos, cuando no e
 Una situación donde se puede usar este ataque es cuando al ejecutar un proceso, por ejemplo, un comentario, no podemos controlar la respuesta que recibimos por lo tanto no podemos hacer un ataque ciego por si/no.
 
 <figure>
-<img alt="que es sql injection" src="/resources/images/que-es-sql-injection/sql-injection.png"/>
+<img alt="que es sql injection" class="img img-responsive" src="/resources/images/que-es-sql-injection/sql-injection.png"/>
 <figcaption>
 SQL Injection, la vulnerabilidad web más peligrosa según OWASP. 
 </figcaption>
@@ -36,7 +36,7 @@ Al contrario de los otros ataques en este caso, es necesario, que no solo usemos
 Capturamos la peticion que hemos hecho a la web desde fiddler y con ella con el composer la vamos a modificar para asi poder enviar lo que nosotros necesitamos.
 
 <figure>
-<img alt="web vulnerable a sql injection" src="/resources/images/injection-time/injection-sql-time.png"/>
+<img alt="web vulnerable a sql injection" class="img img-responsive" src="/resources/images/injection-time/injection-sql-time.png"/>
 <figcaption>
 Fiddler ayudandonos con el ataque de sql injection. 
 </figcaption>

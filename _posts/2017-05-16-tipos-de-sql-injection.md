@@ -14,7 +14,7 @@ En SQL Injection hay tres tipos de ataques principales, sql injection por error,
 
 
 <figure>
-<img alt="que es sql injection" src="/resources/images/que-es-sql-injection/sql-injection.png"/>
+<img alt="que es sql injection" class="img img-responsive" src="/resources/images/que-es-sql-injection/sql-injection.png"/>
 <figcaption>
 SQL Injection, la vulnerabilidad web más peligrosa según OWASP. 
 </figcaption>

@@ -14,7 +14,7 @@ Es la más visual de los ataques de sql injection, ya que consiste en añadir un
 Puede ser que no sea posible hacer ataques por error, ya que los programadores hayan desactivado, logicamente, que se muestren esos errores en la pagina web.Si es asi,la otra manera es hacer este ataque.
 
 <figure>
-<img alt="que es sql injection" src="/resources/images/que-es-sql-injection/sql-injection.png"/>
+<img alt="que es sql injection" class="img img-responsive" src="/resources/images/que-es-sql-injection/sql-injection.png"/>
 <figcaption>
 SQL Injection, la vulnerabilidad web más peligrosa según OWASP. 
 </figcaption>
@@ -48,7 +48,7 @@ y Tachan!! nos aparecen todos los coches,la pagina es vulnerable al ataque sql i
 En la pagina anterior, ya vimos que era vulnerable a sql pero no es vulnerable a sql por error, es decir lo que vimos en el otro articulo no funciona, por lo que tenemos que cambiar de enfoque. Como podemos ver en la imagen, por defecto solo salen tres coches.
 
 <figure>
-<img alt="web vulnerable a sql injection" src="/resources/images/injection-union/injection-union1.png"/>
+<img alt="web vulnerable a sql injection" class="img img-responsive" src="/resources/images/injection-union/injection-union1.png"/>
 <figcaption>
 Esta web es vulnerable a sql injection, pero no el enfoque de sql injection por error
 </figcaption>
@@ -64,7 +64,7 @@ select object_id, name from sys_tables
 {% endhighlight %}
 
 <figure>
-<img alt="web vulnerable a sql injection donde se le añade nuestra query a la query del sistema" src="/resources/images/injection-union/injection-union2.png"/>
+<img alt="web vulnerable a sql injection donde se le añade nuestra query a la query del sistema"  class="img img-responsive" src="/resources/images/injection-union/injection-union2.png"/>
 <figcaption>
 web vulnerable a sql injection donde se le añade nuestra query a la query del sistema
 </figcaption>

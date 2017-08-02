@@ -74,14 +74,14 @@ Select id, nombre from coches where year = 2012
 Tengo una pagina web vulnerable a sql injection en una maquina virtual de mi ordenador, asi que lo primero que hago es probar que la pagina en question es vulnerable a un sql injection.
 
 <figure>
-<img alt="web vulnerable a sql injection" src="/resources/images/injection-error/injection-sql-error-1.png"/>
+<img alt="web vulnerable a sql injection" class="img img-responsive" src="/resources/images/injection-error/injection-sql-error-1.png"/>
 <figcaption>
 SQL Injection, la vulnerabilidad web más peligrosa según OWASP. 
 </figcaption>
 </figure>
 
 <figure>
-<img alt="web vulnerable a sql injection" src="/resources/images/injection-error/injection-sql-error-2.png"/>
+<img alt="web vulnerable a sql injection" class="img img-responsive" src="/resources/images/injection-error/injection-sql-error-2.png"/>
 <figcaption>
 Esta web si es vulnerable a sql injection. 
 </figcaption>
@@ -136,7 +136,7 @@ En esta query tanto podemos usar la tabla sysobjects o sys.tables.
 
 
 <figure>
-<img alt="web vulnerable a sql injection" src="/resources/images/injection-error/injection-sql-error-3.png"/>
+<img alt="web vulnerable a sql injection" class="img img-responsive" src="/resources/images/injection-error/injection-sql-error-3.png"/>
 <figcaption>
 Extrayendo el nombre de las tablas de la base de datos mediante sql injection. 
 </figcaption>
@@ -158,7 +158,7 @@ Extrayendo el nombre de las tablas de la base de datos mediante sql injection.
 {% endhighlight %}
 
 <figure>
-<img alt="web vulnerable a sql injection" src="/resources/images/injection-error/injection-sql-error-4.png"/>
+<img alt="web vulnerable a sql injection" class="img img-responsive" src="/resources/images/injection-error/injection-sql-error-4.png"/>
 <figcaption>
 Extrayendo el nombre de las tablas de la base de datos mediante sql injection. Otra tabla más..
 </figcaption>
@@ -204,7 +204,7 @@ Ya tenemos la tabla, el campo de la tabla, ahora los valores... y como hasta aho
 {% endhighlight %}
 
 <figure>
-<img alt="web vulnerable a sql injection" src="/resources/images/injection-error/injection-sql-error-5.png"/>
+<img alt="web vulnerable a sql injection" class="img img-responsive" src="/resources/images/injection-error/injection-sql-error-5.png"/>
 <figcaption>
 Y ahora a sacar todos los numeros de las tarjetas de credito....
 </figcaption>
