@@ -61,7 +61,7 @@ collections:
 ##########################################
 
 include:
-  - _pages
+  - pages
 
 sass:
   sass_dir: _sass
@@ -74,7 +74,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-feed
 
-paginate_path: /_pages/page:num
+paginate_path: /pages/page:num
 
 highlighter: rouge
 markdown: kramdown
