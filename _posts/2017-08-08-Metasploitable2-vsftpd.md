@@ -6,7 +6,7 @@ comments: true
 description: Metasploitable 2, es una maquina virtual vulnerable creada por la empresa Rapid7 (la de Metasploit), para que la gente que esta empezando con el hacking pueda aprender tranquilamente.  En este articulo explotaremos con Metasploit una vulnerabilidad que habia en un servidor de FTP, el VSFTP, que durante un corto periodo de tiempo tuvo una puerta trasera o backdoor. 
 tags:       
     - hacker
-    - Metasploitable2
+    - metasploitable2
     - metasploit
 ---
 
@@ -208,6 +208,21 @@ Lo primero que hice al ejecutar la maquina virtual de Mestasploitable 2, fue lan
 Los resultados que da Nessus donde no aparece la vulnerabilidad de vsftpd
 </figcaption>
 </figure>
+
+Esto es debido a que hay que modificar la politica de configuración por defecto de Nessus, espero explicar esta modificación más adelante.
+
+## Explotación manual 
+
+Esta vulnerabilidad es un backdoor que se introdujo deliveradamente en el codigo fuente de la aplicación, por lo que lo sus creadores introdujeron una manera manual para entrar, esta funciona de la siguiente manera:
+
+* Nos conectamos al puerto 21 con telnet
+
+{% highlight sql linenos %}
+
+telnet 192.168.1.41 21
+
+{% endhighlight %}
+
 
 
 
