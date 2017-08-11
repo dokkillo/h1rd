@@ -14,7 +14,7 @@ En el articulo anterior atacamos esta vulnerabilidad con ayuda de Metasploit, pe
 
 Para descargarte [Metasploitable 2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/){:target="_blank"}
 
-Recuerda que puedes ver el articulo de como usamos esta vulnerabilidad manual con metasploit [aqui](http://localhost:4000/hacking/Metasploitable2-vsftpd)
+Recuerda que puedes ver el articulo de como usamos esta vulnerabilidad con metasploit [aqui](http://h1rd.com/hacking/Metasploitable2-vsftpd)
 
 ## Puertos abiertos antes de empezar
 
