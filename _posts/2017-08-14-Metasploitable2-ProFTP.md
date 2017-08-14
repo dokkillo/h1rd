@@ -121,6 +121,16 @@ hydra -L /usr/share/metasploit-framework/data/wordlists/unix_users.txt -P /usr/s
 
 {% endhighlight %}
 
+
+Y después de tres horas corriendo con los diccionarios por defecto de Kali.... nada. Seguramente con diccionario hecho a medida hubiese funcionado mejor.
+
+{% highlight sql linenos %}
+
+1 of 1 target completed, 0 valid passwords found
+Hydra (http://www.thc.org/thc-hydra) finished at 2017-08-14 10:06:00
+
+{% endhighlight %}
+
 * Saber el usuario, pero no el password
 
 Puede que durante nuestra fase de enumeración, hayamos conseguido nombres de usuario, con ello podemos probar hydra, solo combinando con passwords, es una opción rapida.
