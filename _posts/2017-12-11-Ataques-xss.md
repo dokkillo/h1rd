@@ -40,7 +40,7 @@ http://www.some.site/page.html#default=Payload
 Hasta ahora siempre los xss que he probado o ejecutado han sido los tipicos de añadir un script y un alert en un textbox y voilà, ya esta el xss, pero en la vida real, hay mucho más sitios donde encontrar y lanzar un xss. Yo he estado practicando xss en dos sitios, [Google XSS](https://xss-game.appspot.com/){:target="_blank"} y [Pentester Lab](https://pentesterlab.com/exercises/web_for_pentester){:target="_blank"}, os recomiendo ambos sitios para practicar cross-site scripting.
 En esta parte del articulo ire poniendo sitios o apuntes donde buscar y ejecutar un xss.
 
-* cross-site scripting en la url
+### Cross-site scripting en la url
 
 Es el xss más basico y sencillo de todos, por ejemplo tenemos esta url:
 
@@ -57,3 +57,21 @@ cambiar el parametro "windows" por nuestro payload basico
 http://www.some.site/page.php?name=<script>alert(1)</script>
 
 {% endhighlight %}
+
+### Saltarse medidas de seguridad basicas contra xss
+
+Imaginemos un caso, donde a un programador de una pagina web, le dicen que su pagina es vulnerable a un ataque por xss, el pobre programador que no sabe mucho de seguridad ve que pueden añadir javascript en su url, asi que lo que dedice es poner una expresion regular que si encuentra el tag script lo eliminara. ¿Cual es el problema? que si el atacante, en su payload en vez de poner script, pone sCript o sCRipt la validación no funciona.
+
+Además no solo eso, si el payload contiene algo como esto,
+
+{% highlight sql linenos %}
+
+<scri<script>pt>
+
+{% endhighlight %}
+
+
+tambien pasaria, ya que al solo pasar la validación una vez, elimina los tags script, pero al eliminarlos se forman nuevos.
+
+
+
