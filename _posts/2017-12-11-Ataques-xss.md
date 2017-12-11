@@ -50,7 +50,7 @@ http://www.some.site/page.php?name=windows
 
 {% endhighlight %}
 
-cambiar el parametro "windows" por nuestro payload basico <script>alert(1)</script>
+cambiar el parametro "windows" por nuestro payload basico
 
 {% highlight sql linenos %}
 
