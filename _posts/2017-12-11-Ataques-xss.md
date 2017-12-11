@@ -39,3 +39,21 @@ http://www.some.site/page.html#default=Payload
 
 Hasta ahora siempre los xss que he probado o ejecutado han sido los tipicos de añadir un script y un alert en un textbox y voilà, ya esta el xss, pero en la vida real, hay mucho más sitios donde encontrar y lanzar un xss. Yo he estado practicando xss en dos sitios, [Google XSS](https://xss-game.appspot.com/){:target="_blank"} y [Pentester Lab](https://pentesterlab.com/exercises/web_for_pentester){:target="_blank"}, os recomiendo ambos sitios para practicar cross-site scripting.
 En esta parte del articulo ire poniendo sitios o apuntes donde buscar y ejecutar un xss.
+
+* cross-site scripting en la url
+
+Es el xss más basico y sencillo de todos, por ejemplo tenemos esta url:
+
+{% highlight sql linenos %}
+
+http://www.some.site/page.php?name=windows
+
+{% endhighlight %}
+
+cambiar el parametro "windows" por nuestro payload basico <script>alert(1)</script>
+
+{% highlight sql linenos %}
+
+http://www.some.site/page.php?name=<script>alert(1)</script>
+
+{% endhighlight %}
