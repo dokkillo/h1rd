@@ -127,3 +127,24 @@ Ejemplos:
 
 {% endhighlight %}
 
+
+### No todo es Alert
+
+Puede que una web sea vulnerable a XSS pero el Alert este bloqueado, como hemos visto que se ha hecho anteriomente con la palabra script, pero además de alert tenemos otras opciones, no tan conocidas, pero el uso es el mismo, como prompt o confirm
+
+{% highlight sql linenos %}
+
+<script>prompt(1)</script>
+
+{% endhighlight %}
+
+{% highlight sql linenos %}
+
+<script>confirm(1)</script>
+
+{% endhighlight %}
+
+
+## Recapitulando
+
+xss everywhere, como hemos podido ver en este articulo, no solo hay xss en un textbox con un simple alert, sino hay muchisimas maneras de ejecutar un xss y en muchos sitios, si quieres más información detallada visita: [XSS Evasion Filter Cheat Sheet](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet){:target="_blank"} 
