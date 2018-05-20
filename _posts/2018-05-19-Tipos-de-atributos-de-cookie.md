@@ -41,7 +41,7 @@ Este atributo obliga a que la cookie solo viaje a traves de conexiones https. Po
 
 ### Atributo de cookie "HttpOnly"
 
-Este atributo va de la mano con el atributo anterior Secure. Este atributo al no estar puesto a true puede permitir que si un atacante consiguiera crear un xss, este podria la cookie con la propiedad HttpOnly a otra pagina web y almacenarla para asi luego poder acceder a su cuenta y sus datos.
+Este atributo va de la mano con el atributo anterior Secure.Este attributo si esta puesto a false permite que esta cookie sea leida mediante javascript. Este atributo al no estar puesto a true puede permitir que si un atacante consiguiera crear un xss, este podria la cookie con la propiedad HttpOnly a otra pagina web y almacenarla para asi luego poder acceder a su cuenta y sus datos.
 
 ### Atributo de cookie "Domain"
 
