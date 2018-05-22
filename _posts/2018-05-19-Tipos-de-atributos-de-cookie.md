@@ -57,5 +57,7 @@ Este atributo, hace referencia a la URL o la ruta por la cual esta cookie es val
 
 ### Atributo de cookie "Expires"
 
-Este atributo va relacionado sobre la fecha con la que la cookie expira. Su valor por defecto es el tiempo que dure la sesion. Una de las cosas que tenemos que validar es que en las cookies con este atributo puesto no deben contener informacion importante para el usuario, tipo session tokens. Ya que si un atacante se pudiera hacer con esa cookie, podria logarse como el usuario. 
+Este atributo va relacionado sobre la fecha con la que la cookie expira. Su valor por defecto es el tiempo que dure la sesion. Una de las cosas que tenemos que validar es que en las cookies con este atributo puesto no deben contener informacion importante para el usuario, tipo session tokens. Ya que si un atacante se pudiera hacer con esa cookie, podria logarse como el usuario.
+
+
 
