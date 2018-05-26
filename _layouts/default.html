@@ -42,7 +42,7 @@
                             {% for tag in site.tags %}
                              {% assign t = tag | first %}
                              {% assign posts = tag | last %}
-                              <li> <a href="{{ site.baseurl }}/tags/{{ tag | downcase }}.html">{{tag}}</a>({{ posts | size }})</li>
+                              <li> <a href="{{ site.baseurl }}/tags/{{tag}}.html">{{tag}}</a>({{ posts | size }})</li>
                             {% endfor %}    
                             </ul>
                         </div>                         
