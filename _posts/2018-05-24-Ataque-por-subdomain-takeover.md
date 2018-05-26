@@ -7,7 +7,7 @@ description: El ataque de toma de control de un subdominio (o subdomain takeover
 tags:   
     - hacker
     - owasp
-    - subdomain
+    - subdominio
 
 ---
 
