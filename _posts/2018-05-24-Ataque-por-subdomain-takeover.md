@@ -30,7 +30,7 @@ Por experiencia es algo bastante normal ya que el departamento de desarrollo, mu
 
 Hay varias opciones para usar esta vulnerabilidad:
 
-* bypass de medidas de seguridad asociadas al dominio (por ejemplo mediante cookies, [ver el articulo sobre tipos de atributos de cookies]({% post_url 2018-05-19-Tipos-de-atributos-de-cookie %})
+* bypass de medidas de seguridad asociadas al dominio (por ejemplo mediante cookies, [ver el articulo sobre tipos de atributos de cookies]({% post_url 2018-05-19-Tipos-de-atributos-de-cookie %}))
 
 * Se pueden crear un sitio de phising, ya que se puede copiar la imagen de la pagina web y trabajar en su nombre.
 
@@ -39,7 +39,7 @@ Hay varias opciones para usar esta vulnerabilidad:
 
 ## Como detectar un subdomain takeover o toma de control de subdominio
 
-Es algo bastante sencillo, hay que encontrar los subdominios, o mediante Google Hacking o usando enumeradores de dominio como Enumall o Sublist3r puedes ver más información de como hacerlo, en el articulo que escribi sobre este tema en [Enumeración de subdominios]({% post_url 2018-05-24-Enumeracion-de-subdominios %})
+Es algo bastante sencillo, hay que encontrar los subdominios, o mediante Google Hacking o usando enumeradores de dominio como Enumall o Sublist3r puedes ver más información de como hacerlo, en el articulo que escribi sobre este tema en [Enumeración de subdominios]({% post_url 2018-05-07-Enumeracion-de-subdominios %})
 
 ## Como arreglar esta vulnerabildad
 
