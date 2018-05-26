@@ -5,7 +5,7 @@ category: Redes
 comments: true
 description: El protocolo SNMP (Simple Network Managment Protocol), trabaja en la capa de aplicación y nos permite trabajar con diferentes dispositivos como routers, switches, firewalls incluso servers, es un protocolo usado para facilitar la información de administracion entre dispositivos de red. 
 tags:   
-    - Protocolos 
+    - protocolos 
 ---
 
 El protocolo SNMP (Simple Network Managment Protocol), trabaja en la capa de aplicación y nos permite trabajar con diferentes dispositivos como routers, switches, firewalls inclus servers, es un protocolo usado para administrar dispositivos. SNMP nos ayuda a saber si una CPU esta sobrecargada en un determinado router etc. 

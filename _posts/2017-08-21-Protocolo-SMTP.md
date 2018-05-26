@@ -6,7 +6,7 @@ comments: true
 description: El protocolo SMTP (Simple Mail Transfer Protocol) se ocupa del intercambio de emails entre diferentes ordenadores u otros dispositivos. Este protocolo tiene algunas limitaciones por lo que se asocia otros protocolos como IMAP o POP, ocupandose SMTP solo del envio y recepción de emails. Lo bueno de este protocolo es que en la fase de enumeración podemos usarlo para averiguar diferentes usuarios de nuestro sistema objetivo, y usarlos posteriormente en diferentes fases.
 tags:   
     - hacker
-    - Protocolos
+    - protocolos
     - metasploitable2
 
 ---

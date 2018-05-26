@@ -5,7 +5,7 @@ category: Redes
 comments: true
 description: El protocolo LDAP (Ligthweight Directory Access Protocol) es un protocolo a nivel de aplicación que permite el acceso a un servicio directorio ordenado y distribuido para buscar diversa información en un entorno de red. LDAP se le considera tambien como una base de datos a la que pueden realizarse consultas.
 tags:   
-    - Protocolos 
+    - protocolos 
 ---
 
 El protocolo LDAP (Ligthweight Directory Access Protocol) es un protocolo a nivel de aplicación que permite el acceso a un servicio directorio ordenado y distribuido para buscar diversa información en un entorno de red. LDAP se le considera tambien como una base de datos a la que pueden realizarse consultas.
