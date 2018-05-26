@@ -23,8 +23,6 @@ layout: default
                             </script>
                         </div>
     <footer>
-        {% if page.comments %}
-        {% include disqus.html %}
-        {% endif %}
+        <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}"></div>
     </footer>
 </article>

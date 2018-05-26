@@ -37,7 +37,7 @@
                                 (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
                         </div>
-                        
+
                         <div class="row">    
                             {% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}#{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
                             {% assign tag_hashes = site_tags | split:',' | sort %}
@@ -70,5 +70,13 @@
 {% endif %}
 <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59341e86a8dc0e6a"></script> 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=2218133151747798";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, "script", "facebook-jssdk"));</script>
 </body>
 </html>
