@@ -18,9 +18,7 @@ quote:
 title: H1RD.COM
 
 
-# Following needed for disqus integration
-# Set your 'disqus' account name
-disqus: h1rd
+
 
 # Uncomment if deployed locally
 #url: https://localhost:4000
