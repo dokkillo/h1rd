@@ -6,9 +6,9 @@ comments: true
 description: Una de las partes más importantes del pentesting es la enumeración, en la que recabaremos toda la información necesaria para que después en las siguientes fases poder atacar al objetivo. En la la parte de la enumeración web se centra en los subdominios, es necesario saber encontrarlos para poder ver que posibles vectores de ataque usar.  En este articulo hablare de varias opciones para extraer todos los subdominios posibles de una web.
 tags:   
     - hacker
-    - owasp
-    - subdominios
+    - owasp    
     - recon-ng
+    - subdominio
 
 ---
 
