@@ -6,7 +6,7 @@ comments: true
 description: Una dirección IP es un número que identifica, de manera lógica y jerárquica a una interfaz de red de un dispositivo que utilice el protocolo TCP/IP. Este articulo se centra en las ips, los tipos de redes, y como hacer subredes.
 
 tags:   
-    - intro
+
     - protocolos
 ---
 

@@ -7,7 +7,7 @@ description: El escaneo de puertos es la funcionalidad principal y la razón por
 
 tags:   
 
-    - pentesting
+
     - nmap
 
 ---

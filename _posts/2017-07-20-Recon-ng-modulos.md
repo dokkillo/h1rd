@@ -7,7 +7,7 @@ description: Lo mejor de Recon-ng son sus modulos, en el post anterior hable de 
 
 tags:   
 
-    - pentesting
+
     - recon-ng
 
 ---

@@ -7,7 +7,7 @@ description: Un test de penetracion consiste en hacer pruebas ofensivas contra m
 
 tags:   
 
-    - pentesting
+
 
 ---
 

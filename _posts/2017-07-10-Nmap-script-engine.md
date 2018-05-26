@@ -7,7 +7,7 @@ description: NMAP tiene un modulo donde podemos ampliar la funcionalidad de NMAP
 
 tags:   
 
-    - pentesting
+
     - nmap
 
 ---

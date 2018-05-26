@@ -7,7 +7,7 @@ description: SQL Injection es la primera vulnerabilidad que buscara cualquier ha
 tags:
     - injection
     - owasp
-    - intro
+
 ---
 
 

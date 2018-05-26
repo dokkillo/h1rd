@@ -7,7 +7,7 @@ description: En la fase de reconocimiento, es necesario conseguir toda la inform
 
 tags:   
 
-    - pentesting
+
     - recon-ng
 
 ---

@@ -7,7 +7,7 @@ description: Nmap (Network mapper) es un scanner de seguridad usado para descubr
 
 tags:   
 
-    - pentesting
+
     - nmap
 
 ---

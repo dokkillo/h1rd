@@ -7,7 +7,7 @@ description: El objetivo de esta etapa es la obtencion de datos referentes a los
 
 tags:   
 
-    - pentesting
+
 
 ---
 

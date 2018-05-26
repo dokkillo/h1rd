@@ -6,7 +6,7 @@ comments: true
 description: El modelo OSI, creado en 1980, es el modelo por referencia para los protocolos de la red, consiste en una normativa compuesta por siete capas que define las diferentes fases por las que deben pasar los datos para viajar de un dispositivo a otro en una red de comunicaciones.
 
 tags:   
-    - intro
+
     - protocolos
     - HTTP
 ---

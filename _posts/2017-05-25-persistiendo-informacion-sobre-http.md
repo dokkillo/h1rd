@@ -8,7 +8,7 @@ tags:
     - hijacking
 
     - owasp
-    - intro
+
     - protocolos
     - HTTP
 ---

@@ -7,7 +7,7 @@ description: En otro articulo hablamos de como buscar informacion de la empresa 
 
 tags:   
 
-    - pentesting
+
 
 ---
 

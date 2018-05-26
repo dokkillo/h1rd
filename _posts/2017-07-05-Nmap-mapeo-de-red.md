@@ -6,7 +6,7 @@ comments: true
 description: En este articulo hablaremos de dos partes fundamentales de NMAP, identificación de host y mapeo de la red. Mediante estas opciones podremos conocer nuestro objetivo más en profundidad. En esta fase lo más importante es que NMAP consiga una respuesta del host, da igual la respuesta, pero algo que demuestre que hay un host vivo detras de esa IP.
 tags:   
 
-    - pentesting
+
     - nmap
 
 ---

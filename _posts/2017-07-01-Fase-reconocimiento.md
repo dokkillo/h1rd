@@ -7,7 +7,7 @@ description: Esta fase consiste en recopilar toda la información posible de nue
 
 tags:   
 
-    - pentesting
+
 
 ---
 

@@ -7,7 +7,7 @@ description: En NMAP hasta ahora hemos estado centrados en descubrir puertos abi
 
 tags:   
 
-    - pentesting
+
     - nmap
 
 ---

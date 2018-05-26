@@ -7,7 +7,7 @@ description: Nmap es una de las aplicaciones más importantes de un pentester o 
 
 tags:   
 
-    - pentesting
+
     - nmap
 
 ---

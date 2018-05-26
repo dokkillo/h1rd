@@ -7,7 +7,7 @@ description: En el mundo empresarial real, los equipos estan protegidos detrás 
 
 tags:   
 
-    - pentesting
+
     - nmap
     - firewall
     - ids

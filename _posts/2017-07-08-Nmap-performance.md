@@ -7,7 +7,7 @@ description: En NMAP no hay ningún problema cuando en el primer scan nos devuel
 
 tags:   
 
-    - pentesting
+
     - nmap
 
 ---
