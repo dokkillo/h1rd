@@ -6,7 +6,7 @@ comments: true
 description: Es la más visual de los ataques de sql injection, ya que consiste en añadir una sentencia sql maliciosa a la sentencia sql original haciendo que la web nos muestre más datos de los que tendria que mostrarnos.
 tags:
     - injection
-    - hacker
+
     - owasp
 ---
 

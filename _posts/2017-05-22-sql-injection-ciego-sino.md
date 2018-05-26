@@ -6,7 +6,7 @@ comments: true
 description: Es el ataque de sql injection más complicado, ya que puede ser que no podamos hacer el ataque por error ni tampoco por union, y como si fuera un fantasma en una casa encantada, solo podamos preguntar preguntas cuya respuesta sea verdadero o falso. De este ataque hay dos tipos, si/no y por tiempo. En este articulo hablaremos del ataque si/no o boleano
 tags:
     - injection
-    - hacker
+
     - owasp
 ---
 

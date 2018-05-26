@@ -6,7 +6,7 @@ comments: true
 description: Esta fase consiste en recopilar toda la información posible de nuestro objetivo, que seguramente la necesitaremos más adelante. Esta información consiste en conseguir las ips, nombres de usuario, trabajadores de la empresa, tipologias de red, tecnologias usadas, emails.
 
 tags:   
-    - hacker
+
     - pentesting
 
 ---

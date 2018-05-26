@@ -6,7 +6,7 @@ comments: true
 description: Nmap (Network mapper) es un scanner de seguridad usado para descubrir hosts y servicios en una red ayudandonos a crear un mapa detallado de toda la red. Nmap es un programa de codigo abierto creado por Gordon Lyon para Linux, pero actualmente el desarrollo esta a cargo de la comunidad y es multiplataforma.
 
 tags:   
-    - hacker
+
     - pentesting
     - nmap
 

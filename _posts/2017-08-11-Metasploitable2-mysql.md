@@ -5,7 +5,7 @@ category: Hacking
 comments: true
 description: Las vulnerabilidades de seguridad no son solo fallos con software antiguo y vulnerable mediante exploits, sino que a veces son problemas relacionados con mostrar más cosas de las que se deberian mostrar, o con configuraciones con defecto, o peor, ambas a la vez. En este caso, la maquina virtual Metasploitable 2, tiene abierto el puerto 3306 del Mysql, y simplemente con eso podemos llegar a tener acceso de administrador en la maquina. 
 tags:       
-    - hacker
+
     - metasploitable2
     - metasploit
 ---

@@ -5,7 +5,7 @@ category: Hacking
 comments: true
 description: Cross-Site Scripting (XSS) es un tipo de ataque por inyección, donde un tercer usuario puede inyectar codigo javascript en una pagina web, provocando que la pagina realice funciones que ni el usuario ni el programdor web esperaban. Este grave problema surge cuando la aplicación web acepta lo que escribe el usuario sin validarlo ni codificarlo. En este blog ya hemos hablado anteriormente del xss, pero en este articulo, quiero entrar mucho más a fondo.
 tags:   
-    - hacker
+
     - owasp
     - xss
 

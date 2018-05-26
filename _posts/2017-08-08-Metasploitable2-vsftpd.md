@@ -5,7 +5,7 @@ category: Hacking
 comments: true
 description: Metasploitable 2, es una maquina virtual vulnerable creada por la empresa Rapid7 (la de Metasploit), para que la gente que esta empezando con el hacking pueda aprender tranquilamente.  En este articulo explotaremos con Metasploit una vulnerabilidad que habia en un servidor de FTP, el VSFTP, que durante un corto periodo de tiempo tuvo una puerta trasera o backdoor. 
 tags:       
-    - hacker
+
     - metasploitable2
     - metasploit
 ---

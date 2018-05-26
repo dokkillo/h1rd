@@ -6,7 +6,7 @@ comments: true
 description: En NMAP hasta ahora hemos estado centrados en descubrir puertos abiertos, servicios y demas, ahora en este post podremos saber como que versiones o que programas estan corriendo en se puerto, o incluso cual es el sistema operativo del host
 
 tags:   
-    - hacker
+
     - pentesting
     - nmap
 

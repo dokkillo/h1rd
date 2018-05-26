@@ -6,7 +6,6 @@ comments: true
 description: En otros articulos hable del FTP del puerto 21, pero Nmap nos dice que hay otro FTP puesto en el puerto 2121, en este articulo hablare de como poder vulnerar este servicio, y no sera con un exploit manual o mediante metasploit, sino con fuerza bruta.
 
 tags:       
-    - hacker
     - metasploitable2
     - metasploit
 

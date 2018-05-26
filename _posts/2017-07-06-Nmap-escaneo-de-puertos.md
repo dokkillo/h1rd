@@ -6,7 +6,7 @@ comments: true
 description: El escaneo de puertos es la funcionalidad principal y la razón por la que se creo NMAP, en otros articulos hemos hablado de como escanear puertos, pero aqui hablaremos de las opciones de como decirle a NMAP que escanee esos puertos. Con la lista de host activos que hemos conseguido de la fase de enumeración, ahora necesitamos averiguar que función hace cada host, ¿es un web server?  ¿tiene la base de datos?
 
 tags:   
-    - hacker
+
     - pentesting
     - nmap
 

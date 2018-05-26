@@ -6,7 +6,6 @@ comments: true
 description: Hay varios tipos de ataque de SQL Injection, algunos son bastante faciles otros algo más complicados pero todos igual de peligrosos.
 tags:
     - injection
-    - hacker
     - owasp
 ---
 

@@ -6,7 +6,7 @@ comments: true
 description: El ataque XSS Reflejado consiste que el atacante comparta un link creado a sus victimas para que estas lo ejecuten y por conseguir su sesion o control sobre su navegador. El vector de ataque XSS o Cross Site Scripting, es una de las vulnerabilidades más extendidas en las paginas web, según OWASP es la tercera en importancia en su TOP 10.
 tags:
     - hijacking
-    - hacker
+
     - owasp
     - xss  
 ---

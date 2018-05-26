@@ -5,7 +5,7 @@ category: Hacking
 comments: true
 description: En el articulo anterior atacamos esta vulnerabilidad con ayuda de Metasploit, pero esta vez lo haremos manualmente, ya que al ser un backdoor, fue una vulnerabilidad creada a posta por alguien con malas intenciones, en este post veremos como ejecutar un backdoor de la manera original sin necesidad de usar Metasploit.
 tags:       
-    - hacker
+
     - metasploitable2
     - metasploit
 ---

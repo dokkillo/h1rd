@@ -6,7 +6,7 @@ comments: true
 description: Nmap es una de las aplicaciones más importantes de un pentester o hacker etico, pero tambien es una de aplicación de consola con multitud de comandos y opciones, y no viene de más tener una chuleta con los comandos de Nmap más importantes.
 
 tags:   
-    - hacker
+
     - pentesting
     - nmap
 

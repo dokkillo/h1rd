@@ -5,7 +5,7 @@ category: Hacking
 comments: true
 description: La inyección de CSV es un tipo de ataque que fue descubierto por primera vez en 2014, consiste en que el atacante introduce codigo malicioso en formularios que luego seran descargados en excel o csv. El ataque va dirigido a quien se descarga el fichero, normalmente es un ataque que no se suele tener en cuenta, por ejemplo el programa de Bug hunting de Google no lo considera como una vulnerabilidad que entre dentro de su programa de recompensas.
 tags:   
-    - hacker
+
     - owasp
     - injection
 

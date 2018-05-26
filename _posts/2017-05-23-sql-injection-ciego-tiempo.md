@@ -6,7 +6,7 @@ comments: true
 description: Cuando la web no da errores con las excepciones de la base de datos, cuando no es posible ni inyectar codigo por union ni siquiera por un ataque ciego si/no, lo unico que queda por probar es ataque ciego por tiempo. El más dificil de todos.
 tags:
     - injection
-    - hacker
+
     - owasp
 ---
 

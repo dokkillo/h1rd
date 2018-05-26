@@ -6,7 +6,7 @@ comments: true
 description: El ataque XSS Persistido consiste en que el atacante consiga que su ataque se quede guardado en la base de datos de la pagina web. El vector de ataque XSS o Cross Site Scripting, es una de las vulnerabilidades más extendidas en las paginas web, según OWASP es la tercera en importancia en su TOP 10.
 tags:
     - hijacking
-    - hacker
+
     - owasp
     - xss
 ---

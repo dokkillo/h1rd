@@ -5,7 +5,7 @@ category: Hacking
 comments: true
 description: Metasploit es un framework open source de seguridad creado por H. D. Moore aunque en el 2009 fue comprado por la empresa rapid7, desde entonces tiene varias versiones comerciales ademas de la versión gratuita. Originalmente estaba escrito en Perl pero fue migrado a Ruby.
 tags:       
-    - hacker
+
     - pentesting
     - metasploit
 ---

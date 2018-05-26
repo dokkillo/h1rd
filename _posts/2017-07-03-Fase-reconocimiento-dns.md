@@ -6,7 +6,7 @@ comments: true
 description: En otro articulo hablamos de como buscar informacion de la empresa mediante google hacking, webs, redes sociales. Ahora toca buscar informacion mediante comandos, como whois, ping, tracert, con los que podremos conocer más información sobre la empresa a auditar.
 
 tags:   
-    - hacker
+
     - pentesting
 
 ---

@@ -4,8 +4,7 @@ title: Tipos de atributos de cookies
 category: Hacking
 comments: true
 description: Las cookies o HTTP cookies consiste en que informacion enviada o recibida en cabeceras HTTP queda almacenada en el lado del cliente por un tiempo. El objetivo principal de las cookies era para facilitar el acceso de los usuarios a sus paginas web favoritas, pero actualmente se usan para muchas cosas y no todas son buenas.
-tags:   
-    - hacker
+tags:
     - owasp
     - cookie
 

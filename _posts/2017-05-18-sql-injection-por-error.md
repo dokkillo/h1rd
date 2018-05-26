@@ -6,7 +6,6 @@ comments: true
 description: Es el más comun y el más facil de explotar ya que es la propia aplicacion que nos va diciendo los errores que da la base de datos cuando vamos usando los ataques de sql injection. Con este error es muy facil conseguir cualquier cosa de la base de datos (estructura, tablas, nombres de campos e incluso datos).
 tags:
     - injection
-    - hacker
     - owasp
 ---
 

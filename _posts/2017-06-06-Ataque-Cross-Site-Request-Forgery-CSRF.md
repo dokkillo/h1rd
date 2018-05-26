@@ -5,7 +5,7 @@ category: Hacking
 comments: true
 description: El ataque por CSRF o XSRF, consiste en forzar al usuario a ejecutar peticiones no deseadas en una web, en la que estan autentificados, si que este se de cuenta. En este tipo de ataque es necesaria la utilización de ingenieria social para engañar a la victima y que ejecute la petición falsa, sea mediante un email, o un link de una red social.
 tags:   
-    - hacker
+
     - owasp
 ---
 

@@ -7,7 +7,7 @@ description: Este ataque referencia directa a objetos ("direct object reference"
 
 
 tags:   
-    - hacker
+
     - owasp
 ---
 

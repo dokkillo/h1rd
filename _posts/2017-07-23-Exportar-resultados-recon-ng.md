@@ -5,7 +5,7 @@ category: Hacking
 comments: true
 description: Cuando ya hemos conseguido con Recon-ng todos los datos que necesitabamos, llega el momento de exportar todos los datos en ficheros que podamos manejar posteriormente. En Recon-ng se puede extraer los datos en diferentes tipos de ficheros. 
 tags:   
-    - hacker
+
     - pentesting
     - recon-ng
 

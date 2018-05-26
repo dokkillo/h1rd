@@ -6,7 +6,7 @@ comments: true
 description: En los ultimos años, todo el mundo sabe que si algo no esta en Google, es que no existe, lo que no sabe mucha gente, es que Google tiene varios comandos y maneras de buscar que nos pueden ayudar en nuestras tareas de busqueda, muchos crackers usan el buscador para encontrar webs vulnerables. Como pentester debemos ser capaces de ver nuestro target con esos mismos ojos. Aunque cualquier usuario avanzado de internet deberia conocer estos comandos.
 
 tags:   
-    - hacker
+
     - intro
 ---
 

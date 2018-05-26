@@ -6,7 +6,7 @@ comments: true
 description: El vector de ataque XSS o Cross Site Scripting, es una de las vulnerabilidades más extendidas en las paginas web, según OWASP es la tercera en importancia en su TOP 10. Esta vulnerabilidad consiste en que un atacante es capaz de inyectar codigo javascript en una pagina visitada por el usuario y poder secuestrar la sesion del usuario o comprometer su navegador web.
 tags:
     - hijacking
-    - hacker
+
     - owasp
     - xss
     - intro

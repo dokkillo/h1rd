@@ -6,7 +6,6 @@ comments: true
 description: SQL Injection es la primera vulnerabilidad que buscara cualquier hacker en una pagina web. Es un ataque facil de hacer, y cuyo resultado puede ser catastrofico para una empresa.
 tags:
     - injection
-    - hacker
     - owasp
     - intro
 ---

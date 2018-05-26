@@ -6,7 +6,7 @@ comments: true
 description: En el mundo empresarial real, los equipos estan protegidos detrás de firewalls, IDS o NATs. En este post hablaremos de las diferentes maneras que usa NMAP para saltarse esas defensas y seguir haciendo su trabajo.
 
 tags:   
-    - hacker
+
     - pentesting
     - nmap
     - firewall

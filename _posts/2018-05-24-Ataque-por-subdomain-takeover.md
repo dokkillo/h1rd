@@ -5,7 +5,7 @@ category: Hacking
 comments: true
 description: El ataque de toma de control de un subdominio (o subdomain takeover en ingles) es una vulnerabilidad facil de detectar si sabes lo que estas buscando y muy peligrosa para la empresa en si mismo. Y os puedo asegurar que no es una vulnerabilidad unicornio de las que se encuentran una cada cinco años, sino que suelen pasar, yo mismo en la auditoria web que estoy haciendo esta semana me la encontre.
 tags:   
-    - hacker
+
     - owasp
     - subdominio
 

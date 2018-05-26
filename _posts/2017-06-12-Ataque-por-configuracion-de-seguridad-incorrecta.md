@@ -6,7 +6,7 @@ comments: true
 description: Todas las configuraciones relacionadas con la seguridad de una aplicación deben ser definidas, implementadas y mantenidas, ya que las configuraciones por defecto no suelen ser correctas. Ademas se debe mantener todo el codigo actualizado incluido las librerias de terceros que se usen en la aplicación. Esto incluye, cuentas de usuario por defecto, paginas sin usar, acceso a ficheros y directorios desprotegidos, fallos no arreglados, configuraciones incorrectas, que nos den acceso al sistema o a informacion relevante del sistema.
 
 tags:   
-    - hacker
+
     - owasp
 ---
 

@@ -5,7 +5,7 @@ category: Hacking
 comments: true
 description: La validación cliente en las paginas webs, es totalmente recomendable tanto para el servidor como para el usuario pero el problema llega cuando solo se valida al cliente y no se valida en el servidor, y con fiddler se puede pasar esa validación facilmente pudiendo dejar codigo xss persistido en la base de datos de la pagina web.
 tags:   
-    - hacker
+
     - owasp
     - xss
     - fiddler
