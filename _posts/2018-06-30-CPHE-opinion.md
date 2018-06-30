@@ -12,7 +12,7 @@ tags:
 Esta semana acabe y aprobe mi primer curso de hacking etico, y en este articulo quiero escribir mi opinión sobre el tema, además de los motivos por lo que hacer el curso, y porque no hacerlo. 
 
 <figure>
-<img alt="Mi opinion sobre el cphe" src="/resources/images/cphe-opinion.png"/>
+<img alt="Mi opinion sobre el cphe" class="img img-responsive" src="/resources/images/cphe-opinion.png"/>
 <figcaption>
 Mi opinión sobre el CPHE
 </figcaption>
