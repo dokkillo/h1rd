@@ -37,12 +37,5 @@ Esta web nos puede ayudar a hacer nuestro recon mucho más facil, ya que puede c
 
 * Enlace : [https://apps.db.ripe.net/db-web-ui/#/fulltextsearch](https://apps.db.ripe.net/db-web-ui/#/fulltextsearch){:target="_blank"}
 
-## REVERSE.REPORT
-
-
-
-
-* Enlace : [http://www.reverse.report/](http://www.reverse.report/){:target="_blank"}
-
 
 
