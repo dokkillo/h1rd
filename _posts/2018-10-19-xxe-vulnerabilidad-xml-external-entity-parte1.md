@@ -7,6 +7,7 @@ description: La vulnerabilidad de XML External Entity o XXE (como se la conoce) 
 tags:   
 
     - owasp
+    - xxe
     
 
 ---
