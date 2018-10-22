@@ -3,13 +3,13 @@ layout: post
 title: Amass, la mejor aplicación para buscar subdominios
 category: Hacking
 comments: true
-description: Amass, es una aplicación desarrollada en Go, que es la aplicación más rapida y efectiva para buscar subdominios, parte fundamental de la parte recon de una aplicación web. En este post aprenderas todo lo necesario para usar esta aplicación correctamente.
+description: Amass, es una aplicación desarrollada en Go, que es la aplicación más rápida y efectiva para buscar subdominios, parte fundamental de la parte recon de una aplicación web. En este post aprenderás todo lo necesario para usar esta aplicación correctamente.
 tags:   
     - recon
     - subdominio
 ---
 
-Amass, es una aplicación desarrollada en Go, que es la aplicación más rapida y efectiva para buscar subdominios, parte fundamental de la parte recon de una aplicación web. En este post aprenderas todo lo necesario para usar esta aplicación correctamente.
+Amass, es una aplicación desarrollada en Go, que es la aplicación más rápida y efectiva para buscar subdominios, parte fundamental de la parte recon de una aplicación web. En este post aprenderás todo lo necesario para usar esta aplicación correctamente.
 
 <figure>
 <img alt="Amass aplicación recomendada por @Jhaddix" class="img img-responsive" src="/resources/images/amass.jpg"/>
@@ -20,23 +20,23 @@ Amass aplicación recomendada por @Jhaddix en su charla Bughunters methodology v
 
 ## Instalar Amass
 
-Esta aplicación funciona tanto para sistemas linux como para windows en windows, puedes descargarte la ultima versión de la aplicacion desde [aqui](https://github.com/OWASP/Amass/releases){:target="_blank"}.
+Esta aplicación funciona tanto para sistemas linux como para windows en windows, puedes descargarte la ultima versión de la aplicación desde [aquí](https://github.com/OWASP/Amass/releases){:target="_blank"}.
 
 En sistemas linux puedes descargarte la aplicación desde snap, buscando "amass".
 
 <figure>
 <img alt="Amass se puede descargar desde snap" class="img img-responsive" src="/resources/images/amass-en-snap.jpg"/>
 <figcaption>
-Amasss se puede descargar desde snap
+Amass se puede descargar desde snap
 </figcaption>
 </figure>
 
 
 ## Usar Amass
 
-Esta aplicación es de las más rapidas para buscar subdominios pero es una aplicación de consola, es decir no tiene interfaz grafica, es todo por comandos, para mi es un punto a favor.
+Esta aplicación es de las más rápidas para buscar subdominios pero es una aplicación de consola, es decir no tiene interfaz gráfica, es todo por comandos, para mi es un punto a favor.
 
-### Comandos basicos
+### Comandos básicos
 
 El primer paso más importante, saber donde esta la ayuda en Amass, es mediante -h, donde recibiremos todos los comandos disponibles.
 
@@ -46,7 +46,7 @@ El primer paso más importante, saber donde esta la ayuda en Amass, es mediante 
 
 {% endhighlight %}
 
-Empezando una busqueda de subdominios basica, con la opcion -d
+Empezando una búsqueda de subdominios básica, con la opción -d
 
 {% highlight bash linenos %}
 
@@ -69,7 +69,11 @@ edge-snaptu-http-mini-shv-01-amt2.facebook.com
 edge-star-shv-01-mia3.facebook.com
 edge-mqtt-shv-01-atl3.facebook.com
 edge-z-m-mini-shv-01-iad3.facebook.com
-edge-mqtt-shv-01-mia3.facebook.com
+edge-mqtt-shv-01-mia3.facebook.com{% highlight xml linenos %}
+
+    <!ENTITY gt       "&#62;"> 
+
+{% endhighlight %}
 edge-star-shv-01-amt2.facebook.com
 edge-z-m-mini-shv-01-atl3.facebook.com
 edge-snaptu-http-p2-shv-01-sea1.facebook.com
@@ -118,10 +122,20 @@ En este apartado veremos varios comandos interesantes para buscar subdominios po
 
 Comandos:
 
--brute despues de buscar subdominios ejecuta las operaciones de fuerza bruta
--min-for-recursive numero  esta operación habilita la posibilidad de volver a hacer fuerza bruta recursiva, es decir si pones -min-for-recursive 3 y en esta vuelta de fuerza bruta el programa solo encuentra 2 subdominios, no volvera a revisar a pasar
--norecursive esta opcion es para que el ataque de fuerza bruta solo sea sobre el dominio principal
+-brute después de buscar subdominios ejecuta las operaciones de fuerza bruta
+-min-for-recursive numero  esta operación habilita la posibilidad de volver a hacer fuerza bruta recursiva, es decir si pones -min-for-recursive 3 y en esta vuelta de fuerza bruta el programa solo encuentra 2 subdominios, no volverá a revisar a pasar
+-norecursive esta opción es para que el ataque de fuerza bruta solo sea sobre el dominio principal
 -w nombrefichero cambias el diccionario de fuerza bruta que usara amass.
+
+
+## Comandos para exportar datos
+
+En esta sección encontraras los comandos necesarios para exportar los resultados
+
+-json nombrefichero con este comando exportaras los resultados a un fichero en formato json.
+-o nombrefichero con este comando exportaras el resultado al fichero que digas.
+-log nombrefichero con este comando podrás exportar.
+
 
 
 
