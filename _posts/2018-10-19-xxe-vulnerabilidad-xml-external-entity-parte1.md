@@ -3,7 +3,7 @@ layout: post
 title:  XML, DTDs y Entidades (XXE 1)
 category: Hacking
 comments: true
-description: La vulnerabilidad de XML External Entity o XXE (como se la conoce) se basa en un sistema deficiente al parsear los XMLs que recibe la aplicación web, permitiendo la inyección de entidades externas de XML posibilitando ataques como conseguir ficheros del servidor de producción o ejecucción de codigo. En el fondo, sucede igual que en el SQL inyection (SQLi) nunca te fies de lo que recibes del usuario.
+description: La vulnerabilidad de XML External Entity o XXE (como se la conoce) se basa en un sistema deficiente al parsear los XMLs que recibe la aplicación web, permitiendo la inyección de entidades externas de XML posibilitando ataques como conseguir ficheros del servidor de producción o ejecución de código. En el fondo, sucede igual que en el SQL inyection (SQLi) nunca te fíes de lo que recibes del usuario.
 tags:   
 
     - owasp
@@ -12,7 +12,7 @@ tags:
 
 ---
 
-La vulnerabilidad de XML External Entity o XXE (como se la conoce) se basa en un sistema deficiente al parsear los XMLs que recibe la aplicación web, permitiendo la inyección de entidades externas de XML posibilitando ataques como conseguir ficheros del servidor de producción o ejecucción de codigo. En el fondo, sucede igual que en el SQL inyection (SQLi) nunca te fies de lo que recibes del usuario.
+La vulnerabilidad de XML External Entity o XXE (como se la conoce) se basa en un sistema deficiente al parsear los XMLs que recibe la aplicación web, permitiendo la inyección de entidades externas de XML posibilitando ataques como conseguir ficheros del servidor de producción o ejecución de código. En el fondo, sucede igual que en el SQL inyection (SQLi) nunca te fíes de lo que recibes del usuario.
 
 <figure>
 <img alt="Ejemplo de un ataque usando la vulnerabilidad Xml External Entity (XXE)" class="img img-responsive" src="/resources/images/xxe_ejemplo_xml_external_entitity.jpg"/>
@@ -55,7 +55,7 @@ Esto es un ejemplo de un XML
 
 {% endhighlight %}
 
-El codigo de arriba es un ejemplo basico de un XML, donde se puede ver los datos estructurados, un tipo llamado edit_mensaje, que contiene un mensaje, y este a la vez esta separado en remitente, destinatario, y texto.
+El código de arriba es un ejemplo básico de un XML, donde se puede ver los datos estructurados, un tipo llamado edit_mensaje, que contiene un mensaje, y este a la vez esta separado en remitente, destinatario, y texto.
 
 {% highlight xml linenos %}
 
@@ -164,11 +164,11 @@ Y el DTD seria este:
 
 {% endhighlight %}
 
-En el caso del ejemplo, el DTD viene referenciado a un fichero externo, no tiene porque podria venir integrado en el propio XML.
+En el caso del ejemplo, el DTD viene referenciado a un fichero externo, no tiene porque podría venir integrado en el propio XML.
 
 ## Las entidades del DTD
 
-Las entidades del DTD, son un mecanismo simple de remplazo, por ejemplo si usaramos en el xml algunos caracteres, este podria hacer que fuese no valido, hay dos tipos de entidades, los parametros de entidades, y las entidades generales.
+Las entidades del DTD, son un mecanismo simple de remplazo, por ejemplo si usaremos en el xml algunos caracteres, este podria hacer que fuese no valido, hay dos tipos de entidades, los parámetros de entidades, y las entidades generales.
 
 ### Entidades generales
 
@@ -207,11 +207,11 @@ O podemos extraer ese valor de una URL externa, con PUBLIC, un ejemplo de ello s
 
 {% endhighlight %}
 
-### Los parametros de entidad
+### Los parámetros de entidad
 
 Los parámetros de entidad es una manera de crear variables internas del DTD que ayudan a que no se repita codigo.
 
-En el ejemplo, %Inline seria un parametro de entidad.
+En el ejemplo, %Inline seria un parámetro de entidad.
 
 {% highlight xml linenos %}
 
@@ -232,7 +232,7 @@ En el ejemplo, %Inline seria un parametro de entidad.
 
 ## La vulnerabilidad del XXE
 
-Si has prestado atención, seguramente te hayas preguntado, que pasaria si en la entidad System, le paso la ruta de otro fichero, o en Public le paso otra url, pues alli empieza el XXE. 
+Si has prestado atención, seguramente te hayas preguntado, que pasaría si en la entidad System, le paso la ruta de otro fichero, o en Public le paso otra url, pues allí empieza el XXE. 
 
 En el proximo articulo de este post, entrare en profundidad con la vulnerabilidad de XML External Entities.
 
