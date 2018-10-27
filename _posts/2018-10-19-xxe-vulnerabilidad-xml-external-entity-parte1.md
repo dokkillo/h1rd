@@ -3,7 +3,7 @@ layout: post
 title:  XML, DTDs y Entidades (XXE 1)
 category: Hacking
 comments: true
-description: La vulnerabilidad de XML External Entity o XXE (como se la conoce) se basa en un sistema deficiente al parsear los XMLs que recibe la aplicación web, permitiendo la inyección de entidades externas de XML posibilitando ataques como conseguir ficheros del servidor de producción o ejecución de código. En el fondo, sucede igual que en el SQL inyection (SQLi) nunca te fíes de lo que recibes del usuario.
+description: La vulnerabilidad de XML External Entity o XXE (como se la conoce) se basa en un sistema deficiente al parsear los XMLs que recibe la aplicación web, permitiendo la inyección de entidades externas de XML posibilitando ataques como conseguir ficheros del servidor de producción o ejecución de código. En el fondo, sucede igual que en el SQL injection (SQLi) nunca te fíes de lo que recibes del usuario.
 tags:   
 
     - owasp
@@ -12,7 +12,7 @@ tags:
 
 ---
 
-La vulnerabilidad de XML External Entity o XXE (como se la conoce) se basa en un sistema deficiente al parsear los XMLs que recibe la aplicación web, permitiendo la inyección de entidades externas de XML posibilitando ataques como conseguir ficheros del servidor de producción o ejecución de código. En el fondo, sucede igual que en el SQL inyection (SQLi) nunca te fíes de lo que recibes del usuario.
+La vulnerabilidad de XML External Entity o XXE (como se la conoce) se basa en un sistema deficiente al parsear los XMLs que recibe la aplicación web, permitiendo la inyección de entidades externas de XML posibilitando ataques como conseguir ficheros del servidor de producción o ejecución de código. En el fondo, sucede igual que en el SQL injection (SQLi) nunca te fíes de lo que recibes del usuario.
 
 <figure>
 <img alt="Ejemplo de un ataque usando la vulnerabilidad Xml External Entity (XXE)" class="img img-responsive" src="/resources/images/xxe_ejemplo_xml_external_entitity.jpg"/>
@@ -23,7 +23,7 @@ Ejemplo de un ataque usando la vulnerabilidad Xml External Entity (XXE)
 
 ## XML
 
-Para poder enteder que es un XXE, lo primero que necesitamos entender que es es un XML y lo que se considera una entidad. XML significa Extensible Markup Language, es decir es un lenguaje de Marcado Extensible, parecido al HTML pero en vez de mostrar los datos, el XML los describe. Su función principal es ayudar a pasar información entre varias aplicaciones, ya que una aplicación sabe que y como tiene que enviar la información y la aplicación que espera, sabe que tiene que recibir.
+Para poder entender que es un XXE, lo primero que necesitamos entender que es es un XML y lo que se considera una entidad. XML significa Extensible Markup Language, es decir es un lenguaje de Marcado Extensible, parecido al HTML pero en vez de mostrar los datos, el XML los describe. Su función principal es ayudar a pasar información entre varias aplicaciones, ya que una aplicación sabe que y como tiene que enviar la información y la aplicación que espera, sabe que tiene que recibir.
 
 Esto es un ejemplo de un XML
 
